@@ -1,0 +1,102 @@
+a[data-cb-name="BulkEditButton"] {
+    margin-bottom: 10px;
+}
+
+.directory-links a, label[title="Select All"], a[data-cb-name="BulkEditButton"] {
+    color: #005883 !important;
+}
+
+.cb-search-button-container {
+    margin-top: 40px;
+}
+
+.cb-search-container #caspioform > table > tbody > tr > td > table[data-cb-name="cbTable"] > tbody > tr > td > table > tbody > tr > td
+{
+        display:block;
+        float:left;
+}
+
+.btn-info {
+    color: #fff !important;
+}
+
+.cb-result-container a[data-cb-name="BulkEditButton"] {
+    display: inline-block !important;
+}
+
+.cb-result-container span.cbResultSetListViewDataLabel::after {
+    content: ':';
+}
+
+.cb-result-container span.cbResultSetData::before {
+    content: ' ';
+}
+
+.cb-result-container table.cbResultSetActionsContainerCellspacing[role="presentation"]:not([data-cb-name="cbTable"]) tbody tr td:first-child {
+    display: block;
+    float: left;
+}
+
+.cb-result-container table.cbResultSetActionsContainerCellspacing[role="presentation"]:not([data-cb-name="cbTable"]) tbody tr td:nth-child(2) {
+    display: block;
+    float: right;
+}
+
+label[title="Select All"] {
+    cursor: pointer;
+}
+
+div#BulkUpdateForm {
+    border-radius: 10px !important;
+    border: 1px solid #fff !important;
+}
+
+div#BulkUpdateForm .SimpleButton {
+    box-shadow: none !important;
+    font-weight: 400;
+    color: #fff !important;
+    border: 1px solid transparent;
+    padding: 2px 10px !important;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .2rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-shadow: none !important;
+    cursor: pointer;
+}
+
+div#BulkUpdateForm .SimpleButton[value="Update"]:disabled {
+    border-color: #e4d2a5 !important;
+    background: #e4d2a5 !important;
+}
+
+div#BulkUpdateForm .SimpleButton[value="Update"]
+{
+        background: #F6C23E !important;
+        border-color: #F6C23E !important;
+}
+
+div#BulkUpdateForm .SimpleButton[value="Cancel"]
+{
+        background: #E74A3B !important;
+        border-color: #E74A3B !important;
+}
+
+div#BulkUpdateForm .SimpleButton[value="Update"]:disabled {
+        border-color: #e4d2a5 !important;
+        background: #e4d2a5 !important;
+}
+
+div#BulkUpdateForm div.Title {
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+}
+
+div#BulkUpdateForm div.ButtonsCtnr {
+        border-bottom-left-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+}
+
+.card .card-header {
+    background-color: #f8f9fc !important;
+}

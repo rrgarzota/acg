@@ -1,0 +1,104 @@
+input[name="Mod0EditRecord"]
+{
+        background-color: #F6C23E !important;
+        border-color: #F6C23E !important;
+        display: inline-block;
+        font-weight: 400;
+        color: #fff !important;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn,
+input[name="Mod0EditRecord"],
+input[name="Mod0DeleteRecord"],
+#cb-modal-body .cbSubmitButton
+{
+        padding: .25rem .5rem !important;
+        font-size: .875rem !important;
+        line-height: 1.5 !important;
+        border-radius: .2rem !important;
+}
+
+input[name="Mod0DeleteRecord"] {
+        color: #fff !important;
+        background-color: #c9302c !important;
+        border-color: #ac2925 !important;
+}
+
+.cb-logs-container td,
+.cb-logs-container th
+{
+        padding:5px !important;
+}
+
+.add-log-button
+{
+        margin-bottom:10px;
+}
+
+#cb-modal-body table[role="presentation"],
+#cb-modal-body table[role="presentation"] table[data-cb-name="cbTable"]
+{
+        width:100%;
+}
+
+#cb-modal-body .cbSubmitButton
+{
+        display: inline-block;
+        font-weight: 400;
+        color: #fff;
+        background-color: #1CC88A !important;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 14px !important;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.dynamic-col > tbody > tr > td > table > tbody > tr > td
+{
+        display:block;
+        float:left;
+}
+
+.cb-overflow
+{
+        overflow:auto;
+}
+
+#cb-modal {
+        z-index: 2 !important;
+}
+
+.modal-backdrop {
+        z-index: 1 !important;
+}
+
+.modal-dialog {
+        max-width: 555px !important;
+}
+
+#cb-modal-body input[type="Submit"][value="Submit"] {
+        background-color:#005883 !important;
+
+}

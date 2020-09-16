@@ -1,0 +1,32 @@
+.fc-event
+{
+    background-color: #005883 !important;
+}
+
+.fc-day-header {
+    background-color: #005883 !important;
+    color: #fff !important;
+}
+
+.fc-highlight,
+td.fc-today {
+    background: #D4F6FF !important
+}
+
+.cbResultSetCalendarCaptionCell {
+    background-color: #fff !important;
+}
+
+.cbResultSetCalendarCaption {
+    color: #000 !important;
+}
+
+.project_name {
+    background: #005883 !important;
+    color: #fff !important;
+    padding: 3px;
+    border-radius: 5px;
+}
+.project_name:hover {
+    text-decoration: none !important;
+}

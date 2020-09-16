@@ -1,0 +1,275 @@
+.cb-search-container #caspioform > table > tbody > tr > td > table[data-cb-name="cbTable"] > tbody > tr > td > table > tbody > tr > td
+{
+        display:block;
+        float:left;
+}
+
+td[class^="cbSubmitButtonContainer"]
+{
+        display:none;
+}
+
+.cb-search-container td[class^="cbHTMLBlockContainer"]
+{
+        padding-top: 40px;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > a,
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:nth-child(10) a {
+        display: inline-block;
+        font-weight: 400;
+        color: #fff !important;
+        border: 1px solid transparent;
+        padding: 2px 10px !important;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: .2rem !important;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > a:nth-child(3) {
+        margin-right: 19px;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:nth-child(10) a {
+        background-color: #36b9cc;
+        border-color: #36b9cc;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > a:nth-child(3),
+.cbResultSetModifyButton,
+div#BulkUpdateForm .SimpleButton[value="Update"]
+{
+        background: #F6C23E !important;
+        border-color: #F6C23E !important;
+        
+}
+
+table[data-cb-name="cbTable"] > tbody > tr > td > a[data-cb-name="InlineDelete"]:last-child,
+div#BulkUpdateForm .SimpleButton[value="Cancel"]
+{
+        background: #E74A3B !important;
+        border-color: #E74A3B !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] input[value="Update"][type="submit"],
+.cb-result-container table[data-cb-name="cbTable"] input[value="Cancel"][type="submit"] {
+        padding: 2px 10px !important;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child
+{
+        padding-left:0px;
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > a:nth-child(1),
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > a:nth-child(5),
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td:last-child > span
+{
+        display:none !important;
+}
+
+.btn
+{
+        padding: .325rem .5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+}
+
+.btn-info
+{
+        color:#fff !important;
+}
+
+.cbResultSetGridDataRow td:nth-child(10),
+.cbResultSetGridTableHeader td:nth-child(10)
+{
+        display:none;
+}
+
+div[class^="cbResultSetGridHeaderCellNumberDate"]
+{
+        text-decoration: normal;
+}
+
+select
+{
+        min-height: 34px;
+        color: #555;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        padding: 6px 12px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > td,
+.cb-result-container table[data-cb-name="cbTable"] > tbody > tr > th
+{
+        padding: 10px 3px !important;
+}
+
+.cb-result-container
+{
+        overflow:auto;
+}
+
+*[name="Mod0InlineEdit"]
+{
+        margin-right:10px;
+}
+
+input[name$="Add"][value="Add"] {
+        margin-left: 5px;
+}
+
+/* Bulk Update */
+
+div#BulkUpdateForm {
+        border-radius: 10px !important;
+        border: 1px solid #fff !important;
+}
+
+div#BulkUpdateForm .SimpleButton {
+        box-shadow: none !important;
+        font-weight: 400;
+        color: #fff !important;
+        border: 1px solid transparent;
+        padding: 2px 10px !important;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: .2rem !important;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        text-shadow: none !important;
+        cursor: pointer;
+}
+
+div#BulkUpdateForm .SimpleButton[value="Update"]:disabled {
+        border-color: #e4d2a5 !important;
+        background: #e4d2a5 !important;
+}
+
+div#BulkUpdateForm div.Title {
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+}
+
+div#BulkUpdateForm div.ButtonsCtnr {
+        border-bottom-left-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+}
+
+/* Tabular Grid View */
+
+table.Table {
+        width: 100% !important;
+        display: block;
+        min-width: 878px !important;
+}
+
+.HeadCtnr table.Table tbody tr.Row td {
+        text-align: left !important;
+        text-transform: capitalize !important;
+        font-size: 12px !important;
+}
+
+.HeadCtnr table.Table tbody tr:first-child th:not(:first-child):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(7)),
+.BodyCtnr table.Table thead tr:first-child th:not(:first-child):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(7)) {
+        width: 10% !important;
+        min-width: 90px;
+}
+
+.HeadCtnr table.Table tbody tr:first-child th:first-child,
+.BodyCtnr table.Table thead tr:first-child th:first-child {
+        width: 1% !important;
+        min-width: 40px;
+}
+
+.HeadCtnr table.Table tbody tr:first-child th:nth-child(7),
+.BodyCtnr table.Table thead tr:first-child th:nth-child(7)
+{
+        min-width: 160px;
+}
+
+.HeadCtnr table.Table tbody tr:first-child th:nth-child(3),
+.BodyCtnr table.Table thead tr:first-child th:nth-child(3),
+.HeadCtnr table.Table tbody tr:first-child th:nth-child(4),
+.BodyCtnr table.Table thead tr:first-child th:nth-child(4) 
+{
+        width: 1% !important;
+        min-width: 91px;
+}
+
+.BodyCtnr table.Table tbody tr td {
+        text-align: left !important;
+}
+
+.BodyCtnr table.Table tbody tr td, .HeadCtnr table.Table tbody tr td {
+        padding: 0px !important;
+}
+
+.HeadCtnr table.Table tbody tr td {
+        background-color: #005883 !important;
+}
+
+.BodyCtnr table.Table tbody tr td div:not(.Edit) {
+        padding: 10px;
+}
+
+.HeadCtnr table.Table tbody tr td div {
+        padding: 17px;
+}
+
+.BodyCtnr table.Table tbody tr td div.Edit input[type="text"] {
+        padding-left: 5px !important;
+        padding-top: 3px !important;
+}
+
+/* Data/Edit Div Container */
+.BodyCtnr table.Table tbody tr td div.Edit, .BodyCtnr table.Table tbody tr td div.Data {
+        width: 100% !important;
+}
+
+.BodyCtnr table.Table tbody tr td div.Data {
+        height: 38px !important;
+        font-size: 12px !important;
+        padding: 0px 5px !important;
+}
+
+.BodyCtnr table.Table tbody tr td div.Data input[type="checkbox"] {
+        margin: 11px !important;
+}
+
+.BodyCtnr table.Table tbody tr td select, .BodyCtnr table.Table tbody tr td input[type="text"] {
+        width: 100% !important;
+        margin: 0px !important;
+        white-space: normal !important;
+        height: 34px !important;
+        padding: 2px 1px;
+        font-size: 12px !important;
+}
+
+.BodyCtnr table.Table tbody tr td div.Edit input[type="checkbox"] {
+        margin: 0px !important;
+}
+
+.directory-links a, .cbResultSetGridEditActionLink, .cbResultSetBulkDeleteActionLink, .cbResultSetBulkEditActionLink {
+        color: #005883 !important;
+}
+
+.cb-result-container table.cbResultSetActionsContainer[role="presentation"] {
+        margin-bottom: 15px;
+}
+
+.cbResultSetLabel>div {
+        padding: 12px !important;
+        float: left;
+}
+
+.card .card-header {
+        background-color: #f8f9fc !important;
+}

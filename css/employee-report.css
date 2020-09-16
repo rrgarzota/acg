@@ -1,0 +1,47 @@
+.cb-search-button-container {
+    margin-top: 42px;
+    margin-left: 12px;
+}
+
+input[type="text"] {
+    padding: 3px 8px !important;
+}
+
+.cb-search-container table[role="presentation"] tbody tr td {
+    background: #f8f9fc !important;
+}
+
+table[data-cb-name="cbTable"] tbody tr td, table[data-cb-name="cbTable"] tbody tr th {
+    padding: 5px 12px !important;
+}
+
+.cb-search-container table[data-cb-name="cbTable"] tbody tr td {
+    float: left;
+}
+
+.cb-search-container {
+    visibility: hidden;
+    overflow-x: auto;
+}
+/* 
+@media (max-width: 632px) {
+    .cb-search-button-container {
+        margin-top: 0px;
+        margin-left: 12px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1113px) {
+    .cb-search-button-container {
+        margin-top: 0px;
+        margin-left: 12px;
+    }
+} */
+
+.cb-result-container .cbResultSetDownloadLink {
+    color: #005883 !important;
+}
+
+.card .card-header {
+    background-color: #f8f9fc !important;
+}

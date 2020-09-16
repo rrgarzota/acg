@@ -1,0 +1,54 @@
+
+iframe { width:100%; border:0;}
+.cb-form-fluid table,
+.cb-form-fluid input[type="text"],
+.cb-form-fluid input[type="password"],
+.cb-form-fluid input[type="file"],
+.cb-form-fluid select { 
+    width:100%; 
+}
+    
+.cb-form-fluid input[type="submit"][value="Submit"] {
+    background: #005883 !important;
+}
+
+.cb-form-fluid input[type="submit"][value="Submit"]:hover {
+    background: #174478 !important;
+}
+
+.cb-res { overflow:auto; }
+.cb-hide-submit input[type="submit"] { display:none; }
+.cb-hide-submit button { margin-top:35px; }
+.cb-hide-submit td { display: inline-block; }
+
+.cb-form-fluid input[type="submit"][value="Delete"]
+{ 
+    margin:0 3px; 
+    background-color: #E74A3B !important;
+    border-color: #E74A3B !important;
+    display: inline-block;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.cb-form-fluid input[type="submit"][value="Update"]
+{ 
+    margin:0 3px; 
+    background-color: #F6C23E !important;
+    border-color: #F6C23E !important;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+.add-project-container, .edit-project-container {
+    width: 100%;
+    float: left;
+}
+
+.cbResultSetData a:hover {
+    text-decoration: none !important;
+}
+
+.project-name {
+    background: #005883 !important;
+}

@@ -1,0 +1,910 @@
+body {
+    font-family: Lato !important;
+}
+
+body.public {
+    background-image: linear-gradient(#1195bb, #015883) !important;
+}
+
+body.modal-open { 
+    height: 100vh !important;
+    overflow-y: hidden !important;
+    padding-right: 17px !important;
+    position: fixed !important;
+    width: 100% !important;
+}
+html { 
+    -webkit-overflow-scrolling: touch; 
+    overflow: scroll; 
+}
+
+body,
+.cbResultSetData, 
+.cbResultSetRecordMessage, 
+.cbResultSetLabelLink,
+tspan, 
+text, 
+label,
+button,
+select,
+input,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+div,
+title,
+svg,
+p {
+    font-family: Lato !important;
+}
+
+#accordionSidebar
+{
+    background-image: linear-gradient(to bottom, #1195bb, #015883) !important;
+    position: fixed;
+    z-index: 2;
+}
+
+.modal {
+    z-index: 4 !important;
+}
+
+.modal-backdrop {
+    z-index: 3 !important;
+}
+
+.d-md-inline {
+    border-top: 1px solid #ffffff1f;
+    padding: 20px 0px !important;
+    margin: 20px 10px !important;
+}
+
+#accordionSidebar a,
+#accordionSidebar button,
+#accordionSidebar hr,
+#accordionSidebar i,
+#accordionSidebar span
+{
+    /* color: #fff !important; */
+}
+
+#accordionSidebar button
+{
+    background-color: #83b8cc !important;
+}
+
+.sidebar-dark #sidebarToggle::after {
+    color: #257ca0 !important
+}
+
+#accordionSidebar hr
+{
+    border: 1px solid #ffffff1f;
+}
+
+#accordionSidebar .caspio-logo img {
+    width: 180px;
+}
+
+#accordionSidebar.toggled .caspio-logo img {
+    width: 82px;
+}
+
+#topbar
+{
+    background-color:#f2f2f2;
+}
+
+#sidebarToggleTop
+{
+    color:#fff !important;
+}
+
+.caspio-blue-color {
+    background-color: #005883;
+}
+
+.card h6 {
+    color: #fff !important;
+}
+
+table[data-cb-name="cbTable"] tbody tr[data-cb-name="header"] th,
+.dropdown-item.active,
+.dropdown-item:active,
+.btn-primary,
+.cbResultSetAddButton,
+.cbResultSetHeaderCheckBoxCell,
+.cbLoginButton,
+.cbPasswordResetButton
+.add-parasite-sample,
+.back-btn
+{
+    background: #005883 !important;
+}
+
+.cbResultSetAddButton:hover, 
+.btn-primary:hover,
+.cbLoginButton:hover,
+.cbPasswordResetButton:hover,
+.add-parasite-sample,
+.back-btn {
+    background: #174478 !important;
+}
+
+.page-header {
+    color: #005883 !important;
+}
+
+/* .highcharts-container {
+    width: 100% !important;
+}
+
+.highcharts-root {
+    width: 100% !important;
+} */
+
+
+
+.loader{
+    position: absolute;
+    height: 100%;
+    background: rgb(255,255,255,.7);
+    z-index: 9999;
+    width: 100%;
+    display: none;
+}
+
+.loader img{
+    top: 35%;
+    left: 50%;
+    position: fixed;
+}
+
+#nav-user-fullname {
+    color: #000 !important;
+}
+
+.user-icon {
+    background: #f2f2f2 !important;
+}
+
+#sidebarToggleTop i {
+    color: #686868;
+}
+
+@media (max-width: 767px) {
+
+    #content-wrapper {
+        margin-left: 136px;
+    }
+
+    #accordionSidebar .caspio-logo img {
+        width: 82px !important;
+    }
+
+    #sidebarToggle {
+        display: none;
+    }
+
+    .public-wrapper {
+        margin-top: 60px !important;
+    }
+}
+
+.content-left-margin-0 { 
+    margin-left: 0px !important;
+}
+
+.content-left-margin-224 {
+    margin-left: 224px !important;
+}
+
+.content-left-margin-104 {
+    margin-left: 104px !important;
+}
+
+.content-left-margin-136 {
+    margin-left: 136px !important;
+}
+
+.content-left-margin-256 {
+    margin-left: 256px !important;
+}
+
+.left-div {
+    width: 16rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .left-div {
+        width: 16rem;
+    }
+
+    #content-wrapper {
+        margin-left: 256px;
+    }
+
+    #sidebarToggle {
+        display: inline;
+    }
+}
+
+
+
+
+/*--------------------- Public ----------------------*/
+
+.public-wrapper {
+    margin-top: 160px;   
+}
+
+.reset-password-wrapper {
+    margin-top: 18px;
+    padding: 20px 40px;
+}
+
+.login-wrapper {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.register-wrapper {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.login-container {
+    margin-top: 50px;
+}
+
+.bg-reset-password-image
+{
+    background: url('../img/image-4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-login-image {
+    background: url('../img/image-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-register-image {
+    background: url('../img/register-img.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+form#caspioform > div {
+    width: 100%;
+}
+
+form#caspioform > div > section {
+    width: auto;
+}
+.public-wrapper form#caspioform > div > section {
+    width: 100%;
+}
+
+.cbPasswordResetButton,
+.cbLoginButton {
+    width: 100%;
+    margin: 0px !important;
+    text-transform: capitalize !important;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    border: 1px solid #d1d3e2 !important;
+}
+
+img.caspio-logo {
+    max-width: 220px;
+    max-height: 70px;
+}
+
+@media (max-width: 600px) {
+    .public-wrapper > div > div {
+        height: 500px !important;
+    }
+}
+
+/*--------------------- Employee Directory ----------------------*/
+
+section[data-cb-name="cbTable"] {
+    background: transparent;
+}
+
+.cb-search-container .cbSubmitButtonContainer {
+    display: none !important;
+}
+
+@media (min-width: 1025px) {
+    .cb-search-container section[data-cb-name="cbTable"] {
+        display: block;
+    }
+    .cb-search-container section[data-cb-name="cbTable"] > div {
+        float: left;
+        grid-row: none;
+        grid-column: none;
+        grid-auto-columns: unset;
+    }
+    .cb-search-container section[data-cb-name="cbTable"] > div > div {
+        float: left;
+    }
+
+    .manage-fish-sample tr > td:nth-of-type(7) {
+        float: right!important;
+        padding-right: 0px!important;
+    }
+
+    .edit-fish tr[data-cb-name="data"] > td:nth-of-type(6) {
+        padding-left: 5px!important;
+        text-align: right;
+        padding-right: 0px!important;
+    }
+    .edit-fish tr[data-cb-name="data"] > td.cbResultSetActionCell {
+        padding: 9px 5px!important;
+    }
+}
+
+.cbResultSetActionCell a[data-cb-name="DetailsLink"],
+.edit-btn{
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+}
+
+.cbSubmitButtonContainer .cbSubmitButton,
+.search-container section .cbBackButton{
+    background-color: #005883 !important;
+    border-color: #005883 !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cbSubmitButtonContainer .cbSubmitButton:hover,
+.search-container section .cbBackButton {
+    background-color: #174478 !important;
+    border-color: #174478 !important;
+}
+
+.cbResultSetActionCell a[data-cb-name="InlineEdit"],
+input[name$="InlineEdit"],
+.cbBackButtonContainer .cbUpdateButton,
+.inline-custom-btn,
+.cbUpdateButtonContainer .cbUpdateButton {
+    background: #F6C23E !important;
+    border-color: #F6C23E !important;
+}
+
+input[name$="InlineEdit"],
+input[name$="InlineEditCancel"] {
+    padding: 2px 10px !important;
+    margin-right: 5px;
+}
+
+
+.cbResultSetActionCell a[data-cb-name="InlineDelete"],
+.cbBackButtonContainer .cbDeleteButton,
+input[name$="InlineEditCancel"] {
+    background: #E74A3B !important;
+    border-color: #E74A3B !important;
+}
+
+.cbResultSetActionCell a,
+.btn-info,
+.inline-custom-btn,
+.edit-btn,
+.add-parasite-sample,
+.back-btn,
+.cbBackButton,
+.cbUpdateButton {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff !important;
+    border: 1px solid transparent;
+    padding: 2px 10px !important;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .2rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-info:hover {
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+}
+
+
+.cb-result-container {
+    float: left;
+    width: 100%;
+
+}
+
+.cb-search-button-container {
+    /* margin-top: 28px; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.cb-search-button-container button {
+    margin-bottom: 10px;
+}
+
+.cbBackButtonContainer .cbUpdateButton,
+.cbBackButtonContainer .cbDeleteButton,
+.add-parasite-sample,
+.edit-btn,
+.search-container section .cbBackButton {
+    color: #fff !important;
+}
+
+.add-button-container {
+    margin-bottom: 15px;
+}
+
+
+
+.cb-results-container .BodyCtnr .Edit select {
+    height: 27px !important;
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .cb-detail-container .cbBackButtonContainer input {
+        margin-top: 5px !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    #BulkUpdateFormBody section[data-cb-name="cbTable"] {
+        width: 100% !important;
+    }
+}
+
+/* custom */
+
+.forgot-password-form .cbSubmitButtonContainer{
+    padding: 15px 5px 10px 5px!important;
+}
+
+.ml-n-4{
+    margin-left: -4px!important;
+}
+
+.forgot-password-form .cbFormNestedTableContainer:nth-child(2) {
+    padding: 10px 10px 5px 10px!important;
+}
+
+.forgot-password-form .cbFormNestedTableContainer:nth-child(3) {
+    padding: 0px 10px!important;
+}
+
+.forgot-password-form .cbFormFieldCell{
+    padding: 5px 5px 5px 0px!important;
+}
+
+.login-logo {
+    max-width: 100%;
+    height: 110px;
+}
+
+.shadow-lg-2 {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6) !important;
+}
+/* .sidebar .nav-item .collapse .collapse-inner .collapse-item,
+.sidebar .nav-item .collapse.show .collapse-inner .collapse-item,
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:visited{
+    color: #fff;
+}
+
+.sidebar .nav-item .collapse.show .collapse-inner .collapse-item:active,
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:focus {
+    color: #005883;
+    background-color: #fff;
+}
+
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover {
+    color: #03628c;
+}
+
+.sidebar .nav-item .collapse {
+    background-color: #03628c;
+    border-radius: 5px;
+} */
+
+/* custom */
+
+
+
+.sidebar.toggled .subtitle {
+    margin-left: 0px;
+}
+
+.sidebar.toggled .title {
+    margin-top: 0px;
+}
+
+.sidebar.toggled .subtitle i {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .subtitle i {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .subtitle {
+        margin-left: 15px;
+    }
+    
+    .title {
+        margin-top: 12px;
+    }
+    .search-container div[id*="cbDataAjaxCtnr"] {
+        overflow: auto!important;
+    }
+}
+
+.brand,
+.brand:hover {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.title .nav-link {
+    font-weight: 700!important;
+}
+
+
+
+.topbar #sidebarToggleTop {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.topbar {
+    height: 2.8rem;
+}
+
+.sidebar .nav-item .nav-link .img-profile,
+.topbar .nav-item .nav-link .img-profile {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.sidebar .sidebar-brand {
+    height: 0rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.3rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+  }
+  
+.sidebar .sidebar-brand .sidebar-brand-icon i {
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+  padding: 0.1rem 1rem;
+  margin: 0 0.5rem;
+  display: block;
+  /* color: #3a3b45; */
+  text-decoration: none;
+  border-radius: 0.35rem;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width:320px) {
+    .sidebar .sidebar-brand,
+    .top-hr {
+        display: none;
+    } 
+
+    .sidebar-heading:first-of-type {
+        padding-top: 10px;
+    }
+
+    .sidebar .nav-item .nav-link {
+        padding: 2px 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .sidebar .sidebar-brand { 
+        height: 2rem;
+        padding: 0.5rem 1rem;
+    }
+    .sidebar hr.sidebar-divider.top-hr {
+        margin-top: 10px;
+    }
+    .sidebar .nav-item .nav-link {
+        padding: 3px 1rem;
+    }
+}
+
+@media only screen and (min-width: 376px) {
+    .topbar {
+        height: 4.375rem;
+    }
+
+    .sidebar .nav-item .nav-link .img-profile,
+    .topbar .nav-item .nav-link .img-profile {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sidebar .sidebar-brand { 
+        height: 4.375rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .sidebar .sidebar-brand .sidebar-brand-icon i {
+        font-size: 2rem;
+    }
+
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item,
+    .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+        padding: 0.5rem 1rem;
+    }
+
+    .sidebar .sidebar-brand {
+        display: flex;
+    }
+}
+
+.nav-link.collapsed.active,
+.sidebar-dark .nav-item .nav-link.active,
+.sidebar-dark .nav-item .nav-link.active i {
+    font-weight: 700!important;
+    color: #fff!important;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div {
+        width: 50px!important;
+    }
+    .add-new-btn {
+        display: block!important;
+    }
+    .cbResultSetAddButton,
+    .cbResultSetModifyButton,
+    .cbResultSetCancelButton,
+    .cbUpdateButton,
+    .cbBackButton  {
+        height: 28px!important;
+    }
+}
+
+input[type="text"], select, input[type="button"], input[type="submit"], .btn,
+.cbResultSetActionCell a[data-cb-name="InlineEdit"], input[name$="InlineEdit"], .cbBackButtonContainer .cbUpdateButton,
+.inline-custom-btn,
+.back-container,
+footer .back-container .back-btn,
+.search-container section .cbBackButton {
+    /* height: 34px !important; */
+    font-style: normal;
+    min-width: 70px;
+}
+select, input[type="button"], input[type="submit"], 
+.btn,
+.cbResultSetActionCell a[data-cb-name="InlineEdit"], 
+input[name$="InlineEdit"], 
+.cbBackButtonContainer .cbUpdateButton,
+.inline-custom-btn,
+.cbUpdateButtonContainer{
+    text-align: center!important;
+}
+
+
+
+.cbResultSetAddButton,
+.cbResultSetAddButton:hover {
+    padding: 0.150rem 0.5rem!important;
+}
+
+select {
+    height: 36px;
+}
+
+.section-w-none .w-30 {
+    width: 100%!important;
+}
+.add-new-btn{
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cb-view-container section .cbFormDataCellNumberDate,
+.cb-view-container section .cbFormDataCell{
+    padding: 5px 15px 5px 0px;
+}
+.search-container section .cbFormDataCellNumberDate,
+.search-container section .cbFormDataCell  {
+    padding: 10px 5px;
+}
+
+select.cbResultSetSelect,
+.cb-results-container select.cbResultSetSelect {
+    height: 28px !important;
+}
+
+@media only screen and (min-width: 1025px) {
+    select {
+        height: 34px;
+    }
+
+    .section-w-none .w-30 {
+        width: 40%!important;
+    }
+    .add-new-btn {
+        margin-left: 10px;
+        margin-bottom: 4px;
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .cb-view-container section .cbFormDataCellNumberDate,
+    .cb-view-container section .cbFormDataCell  {
+        padding: 0px 10px;
+    }
+
+    .search-container section .cbFormDataCellNumberDate,
+    .search-container section .cbFormDataCell  {
+        padding: 0px 15px 5px 15px;
+    }
+
+    select.cbResultSetSelect,
+    .cb-results-container select.cbResultSetSelect {
+        height: 24.8px !important;
+    }
+}
+/* 
+.section-w-none form#caspioform > div > section {
+    width: auto!important;
+} */
+
+/* CSS to show search form and buttons(search and reset) because responsive572 and responsive1024 is hiding the forms. Tried adding the code in bridge STYLES but it didn't work */
+/* cbSearchSpa and cbSearchButtonContainerM are the classes which are not available in other RMA */
+@media only screen and (max-width: 576px){
+
+    /* code to show HTML block buttons (search and reset) */
+    section[class^="cbFormSection"][class*="cbSearchSpa"] div:nth-of-type(2){
+      display: block!important;
+    }
+  
+    /* code in dp to hide default search */
+    .card-body section[class^="cbFormSection"][class*="cbSearchSpa"] div[class*="cbSearchButtonContainerM"]{
+    /* #content-wrapper section[class^="cbFormSection"][class*="cbSearchSpa"] div:nth-of-type(4){ */
+      display: none!important;
+    }
+
+    .add-parasite-sample,
+    .edit-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    [name="Mod0InlineEdit"] {
+        margin-top: 0px!important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px){
+    
+  }
+  
+  @media only screen and (max-width: 1024px){
+    /* show search form */
+    section[class^="cbFormSection"][class*="cbSearchSpa"] div:first-of-type,
+    section[class^="cbFormSection"][class*="cbSearchSpa"] div:first-of-type div{
+      display: block!important;
+    }
+    /* hide default search button */
+    [class*="cbSearchButtonContainer"]{
+      display: none!important;
+    }
+    .add-parasite-sample,
+    .edit-btn,
+    .cbBackButton,
+    .cbUpdateButton {
+        font-size: 14px!important;
+    }
+  }
+
+  footer .back-container .back-btn {
+      text-decoration: none!important;
+  }
+
+  .title-parasite {
+    font-size: 25px!important;
+    font-weight: 700!important;
+    margin-bottom: 20px!important;
+    text-transform: capitalize;
+  }
+
+  .search-container section .cbBackButton,
+  .search-container section .cbBackButton:hover {
+      margin-top: 20px;
+  }
+
+  .search-container form nav.cbFormActionsContainerCellspacing {
+      margin-bottom: 20px;
+  }
+
+  
+
+  
+
+
+  #caspioform > div > div > div[id^="GridCtnr"],
+  .search-container #caspioform > div > section >div {
+      overflow: auto!important;
+  }
+
+  nav #sidebarToggleTop {
+      min-width: auto!important;
+  }
+
+  .cbBackButton {
+      text-transform: capitalize!important;
+  }
+
+  .author-container [class*="cbFormBlock5"] .cbFormFieldCell {
+      padding-top: 8px!important;
+  }
+
+  [data-cb-name="cbFormDataRadios"] label {
+      margin-bottom: 0px!important;
+  }
+
+  .fish-details-container .cbHTMLBlockContainer{
+    padding-left: 0px!important;
+  }
+  .fish-details-container .cbHTMLBlockContainer p {
+    margin-bottom: 5px!important;
+    text-transform: inherit;
+  }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
