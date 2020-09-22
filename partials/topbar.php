@@ -37,3 +37,9 @@
 <div style="display:none;">
     <!-- <script type="text/javascript" src="https://c2axa202.caspio.com/dp/CAF260009215bf44b3004cca97d1/emb"></script> -->
 </div>
+
+<div id="section-loader">
+    <div class="loader-container">
+        <img src="../img/loader.gif" class="loader-icon" alt="page loader" />
+    </div>
+</div>

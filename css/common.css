@@ -842,13 +842,6 @@ select.cbResultSetSelect,
       text-decoration: none!important;
   }
 
-  .title-parasite {
-    font-size: 25px!important;
-    font-weight: 700!important;
-    margin-bottom: 20px!important;
-    text-transform: capitalize;
-  }
-
   .search-container section .cbBackButton,
   .search-container section .cbBackButton:hover {
       margin-top: 20px;
@@ -857,10 +850,6 @@ select.cbResultSetSelect,
   .search-container form nav.cbFormActionsContainerCellspacing {
       margin-bottom: 20px;
   }
-
-  
-
-  
 
 
   #caspioform > div > div > div[id^="GridCtnr"],
@@ -876,21 +865,36 @@ select.cbResultSetSelect,
       text-transform: capitalize!important;
   }
 
-  .author-container [class*="cbFormBlock5"] .cbFormFieldCell {
-      padding-top: 8px!important;
-  }
-
   [data-cb-name="cbFormDataRadios"] label {
       margin-bottom: 0px!important;
   }
 
-  .fish-details-container .cbHTMLBlockContainer{
-    padding-left: 0px!important;
-  }
-  .fish-details-container .cbHTMLBlockContainer p {
-    margin-bottom: 5px!important;
-    text-transform: inherit;
-  }
+
+  /* loader */
+#section-loader{
+    background: rgba(255,255,255,0.75);
+    position:fixed;
+    z-index:9999;
+    height: 100%;
+    width:100%;
+    min-width:100%;
+    min-height:100%;
+    overflow:auto;
+}
+
+.loader-container {
+    position:fixed;
+    z-index:1050;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-icon{
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
+}
 
 
 

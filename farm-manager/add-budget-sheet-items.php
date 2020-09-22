@@ -25,7 +25,7 @@
 						<div class="row form-container">
 							<div class="col-xl-12 col-lg-12">
 								<div class="card shadow mb-4">
-									<div class="card-body">
+									<div class="card-body budget-sheet-items-container">
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/069580002bff653938174248ba7c/emb"></script>
 									</div>
 								</div>
@@ -39,5 +39,7 @@
 		<!-- End of Main Content -->
 	</body>
 	<?php include '../partials/footer.php'; ?>
+	<?php include '../partials/modal.php'; ?>
+	<script src="../js/forms-modal.js"></script>
 
 </html>

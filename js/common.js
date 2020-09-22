@@ -1,3 +1,13 @@
+var $loader = $('#section-loader');
+
+function showLoader() {
+    $loader.removeClass('d-none');
+}
+
+function closeLoader() {
+    $loader.addClass('d-none');
+}
+
 // function - deploy DP in modal
 function openLogModal( modalTitle, dataPageSrc ) {
     $( '#cb-modal-body' ).html( '' );
@@ -12,24 +22,32 @@ function openLogModal( modalTitle, dataPageSrc ) {
     });
 }
 
-function openModal( modalTitle, iframeSrc ) {
+function openModal( modalTitle, iframeSrc, type) {
+    
     $('#cb-modal-title').html( modalTitle );
-    $('#cb-modal-body').html('<iframe frameborder="0" width="100%" scrolling="no" id="cb-modal-frame" src="' + iframeSrc + '"></iframe>');
+    $('#cb-modal-body').html('<iframe frameborder="0" width="100%" scrolling="yes" id="cb-modal-frame" src="' + iframeSrc + '"></iframe>');
+    $('#cb-modal').find('.modal-dialog').addClass(type);
     $('#cb-modal-frame').on( 'load', function() {
-        //iframeLoaded( this.id );
-    });  
-    $('#cb-modal').modal();
+        $('#cb-modal').modal();
+    });
+
+    $('#cb-modal').on('shown.bs.modal', function(e) {
+        iframeLoaded('cb-modal-frame');        
+    });
+}
+
+function closeModal(){
+    $('#cb-modal').modal('hide');
 }
 
 function iframeLoaded(elementId){
-    setTimeout( function() {
-        var $iframe = $('#'+ elementId ).length ? $('#'+ elementId ) : window.parent.$('#'+ elementId );
+    var $iframe = $('#'+ elementId ).length ? $('#'+ elementId ) : window.parent.$('#'+ elementId );
         var padding = 0;
             
         $iframe.css( 'height', '0px' );  
         var height = $iframe.get(0).contentWindow.document.body.scrollHeight + padding;
         $iframe.css( 'height', height + 'px' );
-    }, 2000 );
+        closeLoader();
 }
 
 // function - get URL Vars
@@ -89,6 +107,8 @@ document.addEventListener('DataPageReady', function (event) {
         appendBackToLogin();
     }
     
+    closeLoader();
+
 });
 
 var getUrlParameter = function getUrlParameter(sParam) {
