@@ -405,6 +405,7 @@ input[name$="InlineEditCancel"] {
 .cbResultSetActionCell a,
 .btn-info,
 .inline-custom-btn,
+.cb-search-button-container #btn-submit,
 .edit-btn,
 .add-parasite-sample,
 .back-btn,
@@ -701,6 +702,7 @@ input[name$="InlineEditCancel"] {
 input[type="text"], select, input[type="button"], input[type="submit"], .btn,
 .cbResultSetActionCell a[data-cb-name="InlineEdit"], input[name$="InlineEdit"], .cbBackButtonContainer .cbUpdateButton,
 .inline-custom-btn,
+.btn-primary,
 .back-container,
 footer .back-container .back-btn,
 .search-container section .cbBackButton {
@@ -900,6 +902,14 @@ select.cbResultSetSelect,
     width: 100%;
 } */
 
+.page-header {
+    color: #005883 !important;
+}
+
+/* .btn-primary{
+
+    border-radius: .2rem!important;
+} */
 
 
 

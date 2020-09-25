@@ -3,6 +3,9 @@
 
 <head>
 <?php include_once './partials/header-public.php' ?>
+
+<title>Public: Farm Manager Login</title>
+
 </head>
 
 <body class="bg-gradient-primary public">
@@ -24,7 +27,8 @@
 										<img src="./img/acg-logo.webp" class="caspio-logo">
 									</div>
 									<div class="login-container">
-										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000c349bcf05ce74fe7a8d7/emb"></script>
+										<!-- <script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000c349bcf05ce74fe7a8d7/emb"></script> -->
+										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/0695800072e0d42289ed47c1a5d4/emb"></script>
 									</div>
 									<hr>
 									<div class="text-center">
