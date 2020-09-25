@@ -25,9 +25,15 @@ $(function(){
                 var modalName = $(this).data('name'); //Value is set in the button
                 var modalContentFileName = $(this).data('filename');//value is set in the button
                 var modalType = $(this).data('modal-type');//value is set in the button
+                var poStatus = $(this).data('modal-status');
                 var modalInlineId = '';     
                 var modalInlineSource = splitStringByDash(modalContentFileName);    
-                // console.log(modalInlineSource);       return false;
+                // console.log(modalInlineSource);       
+                // return false;
+
+                if (poStatus === 'Yes') {
+                    modalContentFileName = 'view-purchase-order-modal.php';
+                }
 
                 if (typeof params !== 'undefined' || typeof modalName !== 'undefined' || typeof modalContentFileName !== 'undefined' || typeof modalType !== 'undefined' ) {
 
@@ -58,17 +64,20 @@ $(function(){
         }
         document.addEventListener('BeforeFormSubmit', function(event) {
             showLoader();
+            // console.log('submitted');
+            // event.preventDefault();
 
         });
 
 
         document.addEventListener('FormSubmitted', function(event) {
             $(window).unbind().on('message onmessage', function(e) {
-                // console.log(e);
                 var data = e.originalEvent.data;
+                // console.log(data);
+
                 if (data == 'refresh-search') {
                     // location.href = 'governing-bodies-contacts.php?RID='+$.urlParam('RID')+'&TN='+$.urlParam('TN');
-                    // alert('contact submission');
+                    // alert('po submission');
                     var $filter = $('#filter-btn');
                     $filter.click();
 

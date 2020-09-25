@@ -3,12 +3,12 @@
 
 	<head>
 		<?php include '../partials/header.php'; ?>
-		<title>Farm Manager: Add Budget Sheet Items</title>
+		<title>Supplier: Add Budget Sheet Items</title>
 	</head>
 
 	<body id="page-top">
 		<div id="wrapper">
-		<?php include '../partials/farm-manager-sidebar.php'; ?>
+		<?php include '../partials/supplier-sidebar.php'; ?>
 
 			<div id="content-wrapper" class="d-flex flex-column">
 				<div id="content">
@@ -19,7 +19,7 @@
 
 						<!-- Page Heading -->
 						<div class="d-sm-flex align-items-center justify-content-between mb-4 page-header">
-							<h1 class="h3 mb-0">Add Budget Sheet Items</h1>
+							<h1 class="h3 mb-0">View Budget Sheet Items</h1>
 						</div>
 
 						<div class="row form-container">
@@ -28,8 +28,9 @@
 									<div class="card-header">
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000289872ca58d44cfb9b14/emb"></script>
 									</div>
-									<div class="card-body budget-sheet-items-container">
-										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/069580002bff653938174248ba7c/emb"></script>
+									<div class="card-body supplier-budget-sheet-items-container">
+										<!-- <script type="text/javascript" src="https://c2abz206.caspio.com/dp/069580002bff653938174248ba7c/emb"></script> -->
+										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000273ebfacd0734c6a9460/emb"></script>
 									</div>
 								</div>
 							</div>
@@ -43,7 +44,7 @@
 	</body>
 	<?php include '../partials/footer.php'; ?>
 	<?php include '../partials/modal.php'; ?>
-	<script src="../js/validate_PO.js"></script>
+	<script src="../js/supplier_validate_PO.js"></script>
 	<script src="../js/forms-modal.js"></script>
 
 </html>

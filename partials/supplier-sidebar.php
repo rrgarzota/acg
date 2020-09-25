@@ -11,12 +11,6 @@
 	  
 <hr class="sidebar-divider mb-3 top-hr">
 
-
-<li class="nav-item">
-	<a class="nav-link" href="dashboard.php">
-		<i class="fas fa-fw fa-home"></i>
-		<span>Dashboard</span></a>
-</li>
 <li class="nav-item">
 	<a class="nav-link" href="budget-sheet.php">
 		<i class="fas fa-fw fa-calculator"></i>
