@@ -20,11 +20,13 @@ $(function(){
             var $pricelistBtn = $(this).find('[data-name="Add Pricelist"]');
             var $pricelistItemBtn = $(this).find('[data-name="Add Pricelist Item"]');
             var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
-            // console.log($pricelistBtn);
-            
-            if (supplierPrice == '£0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim() )) {
+            var $parentTr = $(this).closest('tr');
+
+            if (supplierPrice == '£0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
                 $poBtn.attr('disabled', 'disabled');
-            }
+                $poBtn.addClass("disabled");
+                $parentTr.addClass("bg-lighter-red");
+            }            
 
             if (pricelistExisting.trim().length == 0) {
                 $pricelistBtn.removeClass('d-none');

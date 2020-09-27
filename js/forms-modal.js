@@ -27,12 +27,11 @@ $(function(){
                 var modalType = $(this).data('modal-type');//value is set in the button
                 var poStatus = $(this).data('modal-status');
                 var modalInlineId = '';     
-                var modalInlineSource = splitStringByDash(modalContentFileName);    
-                // console.log(modalInlineSource);       
-                // return false;
+                var modalInlineSource = splitStringByDash(modalContentFileName);
 
                 if (poStatus === 'Yes') {
                     modalContentFileName = 'view-purchase-order-modal.php';
+                    modalName = 'View Purchase Order';
                 }
 
                 if (typeof params !== 'undefined' || typeof modalName !== 'undefined' || typeof modalContentFileName !== 'undefined' || typeof modalType !== 'undefined' ) {
@@ -40,13 +39,6 @@ $(function(){
                     if (typeof $(this).data('inline-id') !== 'undefined') {
                         var modalInlineId = $(this).data('inline-id');    
                         var inlineRecordID = '';
-
-                        // switch(modalInlineSource){
-                        //     case 'contact':
-                        //         inlineRecordID = 'BSIID'
-                        //         break;
-                        //     default:
-                        // }
 
                         params = params + '&' + modalInlineId;      
                     }
@@ -64,8 +56,6 @@ $(function(){
         }
         document.addEventListener('BeforeFormSubmit', function(event) {
             showLoader();
-            // console.log('submitted');
-            // event.preventDefault();
 
         });
 
@@ -76,8 +66,6 @@ $(function(){
                 // console.log(data);
 
                 if (data == 'refresh-search') {
-                    // location.href = 'governing-bodies-contacts.php?RID='+$.urlParam('RID')+'&TN='+$.urlParam('TN');
-                    // alert('po submission');
                     var $filter = $('#filter-btn');
                     $filter.click();
 
@@ -95,9 +83,6 @@ $(function(){
         }
         
         function configureModalContent(settings){
-            // console.log('forms-modal');
-            // console.log('asd');
-            //         return false;
             var defaults = {
                 type: '',
                 title: '',

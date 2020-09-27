@@ -11,10 +11,18 @@ $(function(){
         $resultTr.each(function(index){
             var supplierPrice = $(this).find('td:eq(7)').text();
             var budgetQty = $(this).find('td:eq(6)').text();
+            var poStatus = $(this).find('td:eq(9)').text();
             var $poBtn = $(this).find('[data-name="View Purchase Order"]');
+            var $parentTr = $(this).closest('tr');
             
-            if (supplierPrice == '£0.00' || budgetQty === 0) {          
-                $poBtn.attr('disabled', 'disabled');
+            if (supplierPrice == '£0.00' || budgetQty === 0) {   
+                $parentTr.addClass("bg-lighter-red");
+
+                if (poStatus === 'No') {
+                    $poBtn.attr('disabled', 'disabled');
+                    $poBtn.addClass("disabled");
+                }       
+                
             }
             
         });

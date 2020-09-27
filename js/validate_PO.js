@@ -14,9 +14,13 @@ $(function(){
             var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
             var $inlineEditBtn = $(this).find('[data-cb-name="InlineEdit"]');
             var $inlineDeleteBtn = $(this).find('[data-cb-name="InlineDelete"]');
+            var $parentTr = $(this).closest('tr');
             
             if (supplierPrice == '£0.00' || budgetQty === 0) {          
                 $poBtn.attr('disabled', 'disabled');
+                $poBtn.addClass("disabled");
+                // console.log(index.html());
+                $parentTr.addClass("bg-lighter-red");
             }
             
             if (poStatus === 'Yes') {
