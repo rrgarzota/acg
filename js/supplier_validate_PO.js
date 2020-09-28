@@ -7,11 +7,16 @@ $(function(){
         var $form = $divCont.find('#caspioform');
         var $resultTable = $form.find('[data-cb-name="cbTable"]');
         var $resultTr = $resultTable.find('tbody > tr'); 
+        var $supplierBudgetMessageContainer = $divCont.find('.supplier-budget-message-container');
+        var $poMessageContainer = $divCont.find('.po-message-container');
 
         $resultTr.each(function(index){
-            var supplierPrice = $(this).find('td:eq(7)').text();
-            var budgetQty = $(this).find('td:eq(6)').text();
-            var poStatus = $(this).find('td:eq(9)').text();
+            var $supplierPriceCont = $(this).find('td:eq(7)');
+            var supplierPrice = $supplierPriceCont.text();
+            var $budgetQtyCont = $(this).find('td:eq(6)');
+            var budgetQty = $budgetQtyCont.text();
+            var $poStatusCont = $(this).find('td:eq(9)');
+            var poStatus = $poStatusCont.text();
             var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
             var poSupplierID = $(this).find('td:eq(11)').text();
             var supplierIDAuth = $(this).find('td:eq(15)').text();
@@ -25,9 +30,9 @@ $(function(){
             if (supplierPrice == '£0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
                 $poBtn.attr('disabled', 'disabled');
                 $poBtn.addClass("disabled");
-                $parentTr.addClass("bg-lighter-red");
             }            
 
+            // show/hide of add/edit pricelist button
             if (pricelistExisting.trim().length == 0) {
                 $pricelistBtn.removeClass('d-none');
             } else {
@@ -42,9 +47,32 @@ $(function(){
                 }
             }
 
+            // highlight cell and show message
+            if (supplierPrice == '£0.00' || budgetQty === '0') {      
+                $supplierBudgetMessageContainer.removeClass('d-none');
+
+                if (supplierPrice == '£0.00') {
+                    highlightCell($supplierPriceCont);
+                }
+
+                if (budgetQty === '0') {
+                    highlightCell($budgetQtyCont);
+                }
+            }
+
+            if (poSupplierID.trim() != supplierIDAuth.trim() && poStatus === 'Yes') {
+                highlightCell($poStatusCont);
+                $poMessageContainer.removeClass('d-none');
+                
+            }
+
             
 
         });
+
+        function highlightCell(element) {
+            element.addClass('bg-lighter-red');
+        }
 
     });
 
