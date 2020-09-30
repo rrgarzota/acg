@@ -8,7 +8,7 @@
 
 	<body id="page-top">
 		<div id="wrapper">
-		<?php include '../partials/farm-manager-sidebar.php'; ?>
+		<?php include '../partials/finance-sidebar.php'; ?>
 
 			<div id="content-wrapper" class="d-flex flex-column">
 				<div id="content">

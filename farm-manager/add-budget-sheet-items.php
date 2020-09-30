@@ -3,7 +3,7 @@
 
 	<head>
 		<?php include '../partials/header.php'; ?>
-		<title>Farm Manager: Add Budget Sheet Items</title>
+		<title>Farm Manager: Budget Sheet Items</title>
 	</head>
 
 	<body id="page-top">
@@ -19,7 +19,7 @@
 
 						<!-- Page Heading -->
 						<div class="d-sm-flex align-items-center justify-content-between mb-4 page-header">
-							<h1 class="h3 mb-0">Add Budget Sheet Items</h1>
+							<h1 class="h3 mb-0">Budget Sheet Items</h1>
 						</div>
 
 						<div class="row form-container">
