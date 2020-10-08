@@ -29,7 +29,7 @@ $(function(){
             var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
             var $parentTr = $(this).closest('tr');
 
-            if (supplierPrice == '£0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
+            if (supplierPrice == 'R0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
                 $poBtn.attr('disabled', 'disabled');
                 $poBtn.addClass("disabled");
                 $cancelledPoBtn.addClass('disabled');
@@ -53,10 +53,10 @@ $(function(){
             }
 
             // highlight cell and show message
-            if (supplierPrice == '£0.00' || budgetQty === '0') {      
+            if (supplierPrice == 'R0.00' || budgetQty === '0') {      
                 $supplierBudgetMessageContainer.removeClass('d-none');
 
-                if (supplierPrice == '£0.00') {
+                if (supplierPrice == 'R0.00') {
                     highlightCell($supplierPriceCont);
                 }
 

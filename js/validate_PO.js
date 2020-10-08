@@ -23,12 +23,12 @@ $(function(){
             var $parentTr = $(this).closest('tr');
             
             // disable PO button and highlight cells
-            if (supplierPrice == '£0.00' || budgetQty === '0') {          
+            if (supplierPrice == 'R0.00' || budgetQty === '0') {          
                 $poBtn.attr('disabled', 'disabled');
                 $poBtn.addClass("disabled");         
                 $supplierBudgetMessageContainer.removeClass('d-none');
 
-                if (supplierPrice == '£0.00') {
+                if (supplierPrice == 'R0.00') {
                     highlightCell($supplierPriceCont);
                 }
 

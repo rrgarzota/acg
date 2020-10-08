@@ -20,10 +20,10 @@ $(function(){
             var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
             var $parentTr = $(this).closest('tr');
             
-            if (supplierPrice == '£0.00' || budgetQty === '0') {   
+            if (supplierPrice == 'R0.00' || budgetQty === '0') {   
                 $supplierBudgetMessageContainer.removeClass('d-none');
 
-                if (supplierPrice == '£0.00') {
+                if (supplierPrice == 'R0.00') {
                     highlightCell($supplierPriceCont);
                 }
 
