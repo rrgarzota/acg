@@ -15,7 +15,9 @@ $(function(){
             var $budgetQtyCont = $(this).find('td:eq(6)');
             var budgetQty = $budgetQtyCont.text();
             var poStatus = $(this).find('td:eq(9)').text();
+            var cancelledPoStatus = $(this).find('td:eq(15)').text();
             var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
+            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
             var $inlineEditBtn = $(this).find('[data-cb-name="InlineEdit"]');
             var $inlineDeleteBtn = $(this).find('[data-cb-name="InlineDelete"]');
             var $parentTr = $(this).closest('tr');
@@ -38,6 +40,14 @@ $(function(){
             if (poStatus === 'Yes') {
                 $inlineEditBtn.hide();
                 $inlineDeleteBtn.hide();
+            }
+
+            if (cancelledPoStatus === 'Yes') {
+                $cancelledPoBtn.removeClass('d-none');
+                $poBtn.addClass('d-none');
+            } else {
+                $poBtn.removeClass('d-none');
+                $cancelledPoBtn.addClass('d-none');
             }
 
         });

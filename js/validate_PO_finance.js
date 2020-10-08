@@ -14,8 +14,10 @@ $(function(){
             var supplierPrice = $supplierPriceCont.text();
             var $budgetQtyCont = $(this).find('td:eq(6)');
             var budgetQty = $budgetQtyCont.text();
+            var cancelledPoStatus = $(this).find('td:eq(14)').text();
             var poStatus = $(this).find('td:eq(9)').text();
-            var $poBtn = $(this).find('[data-name="View Purchase Order"]');
+            var $poBtn = $(this).find('[data-name="Edit Purchase Order"]');
+            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
             var $parentTr = $(this).closest('tr');
             
             if (supplierPrice == '£0.00' || budgetQty === '0') {   
@@ -36,6 +38,14 @@ $(function(){
                 $poBtn.addClass("disabled");
             }  
             
+            if (cancelledPoStatus === 'Yes') {
+                $cancelledPoBtn.removeClass('d-none');
+                $poBtn.addClass('d-none');
+            } else {
+                $poBtn.removeClass('d-none');
+                $cancelledPoBtn.addClass('d-none');
+            }
+
         });
 
         function highlightCell(element) {

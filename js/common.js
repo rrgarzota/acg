@@ -23,11 +23,10 @@ function openLogModal( modalTitle, dataPageSrc ) {
 }
 
 function openModal( modalTitle, iframeSrc, type) {
-    
     $('#cb-modal-title').html( modalTitle );
     $('#cb-modal-body').html('<iframe frameborder="0" width="100%" scrolling="yes" id="cb-modal-frame" src="' + iframeSrc + '"></iframe>');
     $('#cb-modal').find('.modal-dialog').addClass(type);
-    $('#cb-modal-frame').on( 'load', function() {
+    $('#cb-modal-frame').on( 'load', function(e) {
         $('#cb-modal').modal();
     });
 
@@ -37,7 +36,12 @@ function openModal( modalTitle, iframeSrc, type) {
 }
 
 function closeModal(){
-    $('#cb-modal').modal('hide');
+    if ($('#cb-modal').is(':visible')) {
+        $('#cb-modal-title').html('');
+        $('#cb-modal-body').html('');
+        $('#cb-modal').modal('hide');
+        closeLoader();
+    }
 }
 
 function iframeLoaded(elementId){

@@ -411,10 +411,13 @@ input[name$="InlineEditCancel"] {
 .inline-custom-btn,
 .cb-search-button-container #btn-submit,
 .edit-btn,
+.btn-danger,
 .add-parasite-sample,
 .back-btn,
 .cbBackButton,
-.cbUpdateButton {
+.cbUpdateButton,
+#filter-btn,
+.cb-search-button-container button {
     display: inline-block;
     font-weight: 400;
     color: #fff !important;

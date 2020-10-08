@@ -17,7 +17,9 @@ $(function(){
             var budgetQty = $budgetQtyCont.text();
             var $poStatusCont = $(this).find('td:eq(9)');
             var poStatus = $poStatusCont.text();
+            var cancelledPoStatus = $(this).find('td:eq(18)').text();
             var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
+            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
             var poSupplierID = $(this).find('td:eq(11)').text();
             var supplierIDAuth = $(this).find('td:eq(15)').text();
             var pricelistExisting = $(this).find('td:eq(16)').text();
@@ -30,6 +32,9 @@ $(function(){
             if (supplierPrice == '£0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
                 $poBtn.attr('disabled', 'disabled');
                 $poBtn.addClass("disabled");
+                $cancelledPoBtn.addClass('disabled');
+                $cancelledPoBtn.attr('disabled', 'disabled');
+
             }            
 
             // show/hide of add/edit pricelist button
@@ -64,6 +69,14 @@ $(function(){
                 highlightCell($poStatusCont);
                 $poMessageContainer.removeClass('d-none');
                 
+            }
+
+            if (cancelledPoStatus === 'Yes') {
+                $cancelledPoBtn.removeClass('d-none');
+                $poBtn.addClass('d-none');
+            } else {
+                $poBtn.removeClass('d-none');
+                $cancelledPoBtn.addClass('d-none');
             }
 
             
