@@ -10,17 +10,17 @@ $(function(){
         
         $resultTr.each(function(index){
             var cancelledPoStatus = $(this).find('td:eq(6)').text();
-            var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
-            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
+            var $viewPrBtn = $(this).find('.view');
+            var $cancelledPrBtn = $(this).find('.cancelled');
             var $parentTr = $(this).closest('tr');
-            
+            console.log(cancelledPoStatus);
             
             if (cancelledPoStatus === 'Yes') {
-                $cancelledPoBtn.removeClass('d-none');
-                $poBtn.addClass('d-none');
+                $cancelledPrBtn.removeClass('d-none');
+                $viewPrBtn.addClass('d-none');
             } else {
-                $poBtn.removeClass('d-none');
-                $cancelledPoBtn.addClass('d-none');
+                $viewPrBtn.removeClass('d-none');
+                $cancelledPrBtn.addClass('d-none');
             }
 
         });

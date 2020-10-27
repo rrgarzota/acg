@@ -10,22 +10,27 @@ $(function(){
         var $supplierBudgetMessageContainer = $divCont.find('.supplier-budget-message-container');
         
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(7)');
+            var $supplierPriceCont = $(this).find('td:eq(9)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(6)');
+            var $budgetQtyCont = $(this).find('td:eq(8)');
             var budgetQty = $budgetQtyCont.text();
-            var poStatus = $(this).find('td:eq(9)').text();
-            var cancelledPoStatus = $(this).find('td:eq(15)').text();
-            var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
-            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
+            var poStatus = $(this).find('td:eq(11)').text();
+            var cancelledPoStatus = $(this).find('td:eq(16)').text();
+            // var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
+            var $editPrBtn = $(this).find('.edit');
+            var $viewPrBtn = $(this).find('.view');
+            // var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
+            var $cancelledPrBtn = $(this).find('.cancelled');
             var $inlineEditBtn = $(this).find('[data-cb-name="InlineEdit"]');
             var $inlineDeleteBtn = $(this).find('[data-cb-name="InlineDelete"]');
             var $parentTr = $(this).closest('tr');
             
             // disable PO button and highlight cells
             if (supplierPrice == 'R0.00' || budgetQty === '0') {          
-                $poBtn.attr('disabled', 'disabled');
-                $poBtn.addClass("disabled");         
+                $editPrBtn.attr('disabled', 'disabled');
+                $viewPrBtn.attr('disabled', 'disabled');
+                $editPrBtn.addClass("disabled");         
+                $viewPrBtn.addClass("disabled");         
                 $supplierBudgetMessageContainer.removeClass('d-none');
 
                 if (supplierPrice == 'R0.00') {
@@ -43,11 +48,17 @@ $(function(){
             }
 
             if (cancelledPoStatus === 'Yes') {
-                $cancelledPoBtn.removeClass('d-none');
-                $poBtn.addClass('d-none');
+                $cancelledPrBtn.removeClass('d-none');
+                $editPrBtn.addClass('d-none');
+                $viewPrBtn.addClass('d-none');
+            } else if (poStatus === 'Yes') {
+                $viewPrBtn.removeClass('d-none');
+                $cancelledPrBtn.addClass('d-none');
+                $editPrBtn.addClass('d-none');
             } else {
-                $poBtn.removeClass('d-none');
-                $cancelledPoBtn.addClass('d-none');
+                $editPrBtn.removeClass('d-none');
+                $cancelledPrBtn.addClass('d-none');
+                $viewPrBtn.addClass('d-none');
             }
 
         });

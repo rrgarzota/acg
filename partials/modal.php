@@ -1,15 +1,19 @@
-<div id="cb-modal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div id="cb-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title page-header font-weight-bold" id="cb-modal-title">Modal title</h4>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button> -->
+                <h4 class="modal-title page-header font-weight-bold" id="cb-modal-title"></h4>
             </div>
-            <div class="modal-body">
-                <div id="cb-modal-body" class="cb-form-fluid cb-form-resp"></div>
+            <div class="modal-body mb-0" id="cb-modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"
+                    style="padding:2px 10px !important;">Close</button>
             </div>
         </div>
+
     </div>
 </div>

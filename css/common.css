@@ -412,6 +412,7 @@ input[name$="InlineEditCancel"] {
 .cb-search-button-container #btn-submit,
 .edit-btn,
 .btn-danger,
+.btn-success,
 .add-parasite-sample,
 .back-btn,
 .cbBackButton,
@@ -933,10 +934,19 @@ select.cbResultSetSelect,
     overflow: hidden;
 } */
 
+#cb-modal-body section{
+    width: 100%!important;
+}
 
+#caspioform > div > div > div[id^="GridCtnr"], .search-container #caspioform > div > section >div {
+    overflow: auto!important;
+} 
 
-
-  
+.btn.view,
+.btn.edit,
+.btn.cancelled{
+    min-width: 135px!important;
+}
 
 
 

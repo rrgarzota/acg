@@ -44,6 +44,64 @@ function closeModal(){
     }
 }
 
+function deploy_dp(containerID, appKey, param, title)
+{
+    document.getElementById(containerID).innerHTML = '';
+    var $title = document.getElementById('cb-modal-title');
+
+
+    var script = document.createElement('script');
+    script.src = 'https://c2abz206.caspio.com/dp/' + appKey + '/emb' + param;
+
+    var container = document.getElementById(containerID);
+
+    if(container)
+    {
+        container.appendChild(script);
+    }
+
+    if ($title) {
+        $title.innerHTML = '';
+        $title.innerHTML = title;
+    }
+}
+
+function open_pr_modal(params, module)
+{
+    $('#cb-modal').modal('show');
+    
+    if (module === 'edit-pr') {
+        deploy_dp('cb-modal-body', '069580004231b370fad54d79b31d', '?' + params, 'Add Purchase Request');
+    } else if (module === 'view-pr') {
+        deploy_dp('cb-modal-body', '06958000126f0b6addd7484db1ee', '?' + params, 'Edit Purchase Request');
+    } else if (module === 'cancelled-pr') {
+        deploy_dp('cb-modal-body', '0695800019afc2e19317448c95af', '?' + params, 'View Purchase Request');
+    }
+}
+
+function closeModalGeneral(){
+    if ($('#cb-modal').is(':visible')) {
+        $('#cb-modal-title').html('');
+        $('#cb-modal-body').html('');
+        $('#cb-modal').modal('hide');
+        closeLoader();
+    }
+}
+
+function cancelPR(){
+
+    var $container = $('#cb-modal-body');
+    var $form = $container.find('#caspioform');
+    var $cancelBtn = $form.find('#btn-cancel');
+    var $editBtn = $form.find('#btn-edit');
+    var $cancelField = $form.find('input[name*="Purchase_Orders_Cancel"]'); 
+
+    $cancelField.val('Yes');
+    $editBtn.click();
+    
+
+}
+
 function iframeLoaded(elementId){
     var $iframe = $('#'+ elementId ).length ? $('#'+ elementId ) : window.parent.$('#'+ elementId );
         var padding = 0;
@@ -112,6 +170,10 @@ document.addEventListener('DataPageReady', function (event) {
     }
     
     closeLoader();
+
+    if (event.detail.appKey == '069580001b4ba32005084908b953') {
+        resetSearch();
+    }
 
 });
 
@@ -200,4 +262,20 @@ function toggleSideBar() {
         }
     }
 }
+
+function resetSearch(){
+    var resetButton = $('.reset');
+  
+    resetButton.on('click', function(){
+  
+      var $search = $('.filter-btn');
+      var $input = $('.cbFormTextField');
+      var $select = $('.cbFormSelect');
+  
+      $input.val('');
+      $select.val('');
+      $search.click();
+  
+    });
+  }
 
