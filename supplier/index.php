@@ -1,5 +1,5 @@
 <script>
 
-window.location.href = 'budget-sheet.php';
+window.location.href = 'view-budget-sheet-items.php';
 
 </script>

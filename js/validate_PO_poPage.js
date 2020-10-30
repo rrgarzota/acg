@@ -13,7 +13,6 @@ $(function(){
             var $viewPrBtn = $(this).find('.view');
             var $cancelledPrBtn = $(this).find('.cancelled');
             var $parentTr = $(this).closest('tr');
-            console.log(cancelledPoStatus);
             
             if (cancelledPoStatus === 'Yes') {
                 $cancelledPrBtn.removeClass('d-none');

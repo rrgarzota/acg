@@ -12,17 +12,17 @@
 <hr class="sidebar-divider mb-3 top-hr">
 
 <li class="nav-item">
-	<a class="nav-link" href="budget-sheet.php">
+	<a class="nav-link" href="view-budget-sheet-items.php">
 		<i class="fas fa-fw fa-calculator"></i>
 		<span>Budget Sheet</span></a>
 </li>
 <li class="nav-item">
 	<a class="nav-link" href="purchase-orders.php">
 		<i class="fas fa-fw fa-shopping-cart"></i>
-		<span>Purchase Orders</span></a>
+		<span>Purchase Requests</span></a>
 </li>
 <li class="nav-item">
-	<a class="nav-link" href="price-list.php">
+	<a class="nav-link" href="view-pricelist-items.php">
 		<i class="fas fa-fw fa-list"></i>
 		<span>Price List</span></a>
 </li>

@@ -11,45 +11,50 @@ $(function(){
         var $poMessageContainer = $divCont.find('.po-message-container');
 
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(7)');
+            var $supplierPriceCont = $(this).find('td:eq(9)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(6)');
+            var $budgetQtyCont = $(this).find('td:eq(8)');
             var budgetQty = $budgetQtyCont.text();
-            var $poStatusCont = $(this).find('td:eq(9)');
+            var $poStatusCont = $(this).find('td:eq(11)');
             var poStatus = $poStatusCont.text();
-            var cancelledPoStatus = $(this).find('td:eq(18)').text();
-            var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
-            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
-            var poSupplierID = $(this).find('td:eq(11)').text();
-            var supplierIDAuth = $(this).find('td:eq(15)').text();
-            var pricelistExisting = $(this).find('td:eq(16)').text();
-            var pricelistItemExisting = $(this).find('td:eq(14)').text();
-            var $pricelistBtn = $(this).find('[data-name="Add Pricelist"]');
-            var $pricelistItemBtn = $(this).find('[data-name="Add Pricelist Item"]');
-            var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
+            var cancelledPoStatus = $(this).find('td:eq(20)').text();
+            // var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
+            // var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
+
+            var $viewPrBtn = $(this).find('.view');
+            var $cancelledPrBtn = $(this).find('.cancelled');
+
+            var poSupplierID = $(this).find('td:eq(13)').text();
+            var supplierIDAuth = $(this).find('td:eq(17)').text();
+            // var pricelistExisting = $(this).find('td:eq(19)').text();
+            var pricelistItemExisting = $(this).find('td:eq(18)').text();
+            // var $pricelistBtn = $(this).find('[data-name="Add Pricelist"]');
+            // var $pricelistItemBtn = $(this).find('[data-name="Add Pricelist Item"]');
+            // var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
+            var $addpricelistItemBtn = $(this).find('.bsi-add-pricelist-item');
+            var $editPricelistItemBtn = $(this).find('.bsi-edit-pricelist-item');
+
             var $parentTr = $(this).closest('tr');
 
+            // console.log(poStatus);
+            // console.log(poSupplierID);
+            // console.log(supplierIDAuth);return false;
             if (supplierPrice == 'R0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
-                $poBtn.attr('disabled', 'disabled');
-                $poBtn.addClass("disabled");
-                $cancelledPoBtn.addClass('disabled');
-                $cancelledPoBtn.attr('disabled', 'disabled');
+                $viewPrBtn.attr('disabled', 'disabled');
+                $viewPrBtn.addClass("disabled");
+                $cancelledPrBtn.addClass('disabled');
+                $cancelledPrBtn.attr('disabled', 'disabled');
 
             }            
 
-            // show/hide of add/edit pricelist button
-            if (pricelistExisting.trim().length == 0) {
-                $pricelistBtn.removeClass('d-none');
-            } else {
-                $pricelistBtn.addClass('d-none');
+            // show/hide of add/edit pricelist item button
 
-                if (pricelistItemExisting.trim().length == 0) {
-                    $pricelistItemBtn.removeClass('d-none');
-                } else {
-                    $pricelistItemBtn.addClass('d-none');
-                    $editPricelistItemBtn.removeClass('d-none');
-                    
-                }
+            if (pricelistItemExisting.trim().length == 0) {
+                $addpricelistItemBtn.removeClass('d-none');
+            } else {
+                $addpricelistItemBtn.addClass('d-none');
+                $editPricelistItemBtn.removeClass('d-none');
+                
             }
 
             // highlight cell and show message
@@ -72,11 +77,11 @@ $(function(){
             }
 
             if (cancelledPoStatus === 'Yes') {
-                $cancelledPoBtn.removeClass('d-none');
-                $poBtn.addClass('d-none');
+                $cancelledPrBtn.removeClass('d-none');
+                $viewPrBtn.addClass('d-none');
             } else {
-                $poBtn.removeClass('d-none');
-                $cancelledPoBtn.addClass('d-none');
+                $viewPrBtn.removeClass('d-none');
+                $cancelledPrBtn.addClass('d-none');
             }
 
             

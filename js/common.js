@@ -76,6 +76,18 @@ function open_pr_modal(params, module)
         deploy_dp('cb-modal-body', '06958000126f0b6addd7484db1ee', '?' + params, 'Edit Purchase Request');
     } else if (module === 'cancelled-pr') {
         deploy_dp('cb-modal-body', '0695800019afc2e19317448c95af', '?' + params, 'View Purchase Request');
+    } else if (module === 'add-pricelist') {
+        deploy_dp('cb-modal-body', '06958000529ab5c5a611457497d8', '?' + params, 'Add Pricelist');
+    } else if (module === 'edit-pricelist') {
+        deploy_dp('cb-modal-body', '06958000da80908d5e284d3f8e2b', '?' + params, 'Edit Pricelist');
+    } else if (module === 'bsi-add-pricelist-item') {
+        deploy_dp('cb-modal-body', '06958000f1e3497b30fa4985b958', '?' + params, 'Add Pricelist');
+    } else if (module === 'bsi-edit-pricelist-item') {
+        deploy_dp('cb-modal-body', '06958000b3ac1ee10a30451ab10c', '?' + params, 'Edit Pricelist');
+    } else if (module === 'bsi-view-pr') {
+        deploy_dp('cb-modal-body', '0695800010a0e31cf66b42029599', '?' + params, 'View Purchase Request');
+    } else if (module === 'bsi-cancelled-pr') {
+        deploy_dp('cb-modal-body', '069580007a629ed35a494fb88adc', '?' + params, 'View Purchase Request');
     }
 }
 
@@ -229,10 +241,10 @@ $('#content-wrapper').removeClass('content-left-margin-0');
 if ($(window).width() >= 768) {
     if ($('#accordionSidebar').hasClass('toggled')) {
     $('#content-wrapper').addClass('content-left-margin-136');
-    $('#content-wrapper').removeClass('content-left-margin-256');
+    $('#content-wrapper').removeClass('content-left-margin-192');
     } 
     else {
-    $('#content-wrapper').addClass('content-left-margin-256');
+    $('#content-wrapper').addClass('content-left-margin-192');
     $('#content-wrapper').removeClass('content-left-margin-136');
     }
 } else {

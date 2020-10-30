@@ -565,11 +565,28 @@ pre code {
   }
 }
 
+@media (max-width: 767px){
+  .sidebar-brand .sidebar-brand-icon {
+    display: block;
+  }
+  .sidebar-brand .sidebar-brand-icon {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+  .sidebar-brand .sidebar-brand-icon {
+    display: none;
+  }
+  .sidebar.toggled .sidebar-brand .sidebar-brand-icon {
+    display: block;
+  }
 }
+
+
 
 @media (min-width: 992px) {
   .container {
@@ -10194,7 +10211,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 16rem !important;
+    width: 12rem !important;
   }
   .sidebar .nav-item .collapse {
     position: relative;
@@ -10305,6 +10322,7 @@ a:focus {
   .sidebar.toggled .sidebar-brand .sidebar-brand-text {
     display: none;
   }
+  
   .sidebar.toggled .sidebar-heading {
     text-align: center;
   }

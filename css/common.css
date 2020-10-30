@@ -218,6 +218,10 @@ table[data-cb-name="cbTable"] tbody tr[data-cb-name="header"] th,
     margin-left: 256px !important;
 }
 
+.content-left-margin-192 {
+    margin-left: 192px !important;
+}
+
 .left-div {
     width: 16rem;
     height: 100vh;
@@ -231,7 +235,7 @@ table[data-cb-name="cbTable"] tbody tr[data-cb-name="header"] th,
     }
 
     #content-wrapper {
-        margin-left: 256px;
+        margin-left: 192px;
     }
 
     #sidebarToggle {
@@ -606,7 +610,7 @@ input[name$="InlineEditCancel"] {
     font-weight: 800;
     padding: 1.3rem 1rem;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.05rem;
     z-index: 1;
   }
@@ -944,7 +948,8 @@ select.cbResultSetSelect,
 
 .btn.view,
 .btn.edit,
-.btn.cancelled{
+.btn.cancelled,
+.form-modal{
     min-width: 135px!important;
 }
 
