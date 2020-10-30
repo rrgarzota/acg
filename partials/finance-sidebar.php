@@ -17,14 +17,14 @@
 		<span>Dashboard</span></a>
 </li>
 <li class="nav-item">
-	<a class="nav-link" href="budget-sheet.php">
+	<a class="nav-link" href="view-budget-sheet-items.php">
 		<i class="fas fa-fw fa-calculator"></i>
 		<span>Budget Sheet</span></a>
 </li>
 <li class="nav-item">
 	<a class="nav-link" href="purchase-orders.php">
 		<i class="fas fa-fw fa-shopping-cart"></i>
-		<span>Purchase Orders</span></a>
+		<span>Purchase Request</span></a>
 </li>
 <li class="nav-item">
 	<a class="nav-link" href="price-list.php">

@@ -3,7 +3,7 @@
 
 	<head>
 		<?php include '../partials/header.php'; ?>
-		<title>Finance: Add Budget Sheet Items</title>
+		<title>Finance: Budget</title>
 	</head>
 
 	<body id="page-top">
@@ -19,16 +19,13 @@
 
 						<!-- Page Heading -->
 						<div class="d-sm-flex align-items-center justify-content-between mb-4 page-header">
-							<h1 class="h3 mb-0">View Budget Sheet Items</h1>
+							<h1 class="h3 mb-0">Budget</h1>
 						</div>
 
 						<div class="row form-container">
 							<div class="col-xl-12 col-lg-12">
 								<div class="card shadow mb-4">
-									<div class="card-header">
-										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000289872ca58d44cfb9b14/emb"></script>
-									</div>
-									<div class="card-body finance-budget-sheet-items-container">
+									<div class="card-body search-container finance-budget-sheet-items-container">
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000eb2dac8fd2e2437f8ad8/emb"></script>
 									</div>
 								</div>
@@ -44,6 +41,6 @@
 	<?php include '../partials/footer.php'; ?>
 	<?php include '../partials/modal.php'; ?>
 	<script src="../js/validate_PO_finance.js"></script>
-	<script src="../js/forms-modal.js"></script>
+	<!-- <script src="../js/forms-modal.js"></script> -->
 
 </html>

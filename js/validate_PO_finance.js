@@ -10,14 +10,14 @@ $(function(){
         var $supplierBudgetMessageContainer = $divCont.find('.supplier-budget-message-container');
         
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(7)');
+            var $supplierPriceCont = $(this).find('td:eq(9)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(6)');
+            var $budgetQtyCont = $(this).find('td:eq(8)');
             var budgetQty = $budgetQtyCont.text();
-            var cancelledPoStatus = $(this).find('td:eq(14)').text();
-            var poStatus = $(this).find('td:eq(9)').text();
-            var $poBtn = $(this).find('[data-name="Edit Purchase Order"]');
-            var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
+            var cancelledPoStatus = $(this).find('td:eq(15)').text();
+            var poStatus = $(this).find('td:eq(11)').text();
+            var $viewPrBtn = $(this).find('.view');
+            var $cancelledPrBtn = $(this).find('.cancelled');
             var $parentTr = $(this).closest('tr');
             
             if (supplierPrice == 'R0.00' || budgetQty === '0') {   
@@ -34,16 +34,16 @@ $(function(){
             }
             
             if (poStatus === 'No') {
-                $poBtn.attr('disabled', 'disabled');
-                $poBtn.addClass("disabled");
+                $viewPrBtn.attr('disabled', 'disabled');
+                $viewPrBtn.addClass("disabled");
             }  
             
             if (cancelledPoStatus === 'Yes') {
-                $cancelledPoBtn.removeClass('d-none');
-                $poBtn.addClass('d-none');
+                $cancelledPrBtn.removeClass('d-none');
+                $viewPrBtn.addClass('d-none');
             } else {
-                $poBtn.removeClass('d-none');
-                $cancelledPoBtn.addClass('d-none');
+                $viewPrBtn.removeClass('d-none');
+                $cancelledPrBtn.addClass('d-none');
             }
 
         });

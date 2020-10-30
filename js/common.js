@@ -88,6 +88,10 @@ function open_pr_modal(params, module)
         deploy_dp('cb-modal-body', '0695800010a0e31cf66b42029599', '?' + params, 'View Purchase Request');
     } else if (module === 'bsi-cancelled-pr') {
         deploy_dp('cb-modal-body', '069580007a629ed35a494fb88adc', '?' + params, 'View Purchase Request');
+    } else if (module === 'finance-bsi-view-pr') {
+        deploy_dp('cb-modal-body', '069580006906596eb4744628a8ca', '?' + params, 'View Purchase Request');
+    } else if (module === 'finance-bsi-cancelled-pr') {
+        deploy_dp('cb-modal-body', '0695800071e58e1101804cab889f', '?' + params, 'View Purchase Request');
     }
 }
 
@@ -183,9 +187,10 @@ document.addEventListener('DataPageReady', function (event) {
     
     closeLoader();
 
-    if (event.detail.appKey == '069580001b4ba32005084908b953') {
+    if (event.detail.appKey == '069580001b4ba32005084908b953' || event.detail.appKey == '0695800060b09bd95dc641539d41') {
         resetSearch();
     }
+    
 
 });
 

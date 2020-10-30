@@ -25,7 +25,7 @@
 						<div class="row">
 							<div class="col-xl-12 col-lg-12">
 								<div class="card shadow mb-4">
-									<div class="card-body">
+									<div class="card-body search-container">
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/0695800060b09bd95dc641539d41/emb"></script>
 									</div>
 								</div>
