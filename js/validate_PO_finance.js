@@ -10,12 +10,12 @@ $(function(){
         var $supplierBudgetMessageContainer = $divCont.find('.supplier-budget-message-container');
         
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(9)');
+            var $supplierPriceCont = $(this).find('td:eq(8)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(8)');
+            var $budgetQtyCont = $(this).find('td:eq(7)');
             var budgetQty = $budgetQtyCont.text();
-            var cancelledPoStatus = $(this).find('td:eq(15)').text();
-            var poStatus = $(this).find('td:eq(11)').text();
+            var cancelledPoStatus = $(this).find('td:eq(14)').text();
+            var poStatus = $(this).find('td:eq(10)').text();
             var $viewPrBtn = $(this).find('.view');
             var $cancelledPrBtn = $(this).find('.cancelled');
             var $parentTr = $(this).closest('tr');
