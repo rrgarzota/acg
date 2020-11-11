@@ -11,23 +11,23 @@ $(function(){
         var $poMessageContainer = $divCont.find('.po-message-container');
 
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(8)');
+            var $supplierPriceCont = $(this).find('td:eq(7)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(7)');
+            var $budgetQtyCont = $(this).find('td:eq(6)');
             var budgetQty = $budgetQtyCont.text();
-            var $poStatusCont = $(this).find('td:eq(10)');
+            var $poStatusCont = $(this).find('td:eq(9)');
             var poStatus = $poStatusCont.text();
-            var cancelledPoStatus = $(this).find('td:eq(19)').text();
+            var cancelledPoStatus = $(this).find('td:eq(18)').text();
             // var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
             // var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
 
             var $viewPrBtn = $(this).find('.view');
             var $cancelledPrBtn = $(this).find('.cancelled');
 
-            var poSupplierID = $(this).find('td:eq(12)').text();
-            var supplierIDAuth = $(this).find('td:eq(16)').text();
+            var poSupplierID = $(this).find('td:eq(11)').text();
+            var supplierIDAuth = $(this).find('td:eq(15)').text();
             // var pricelistExisting = $(this).find('td:eq(19)').text();
-            var pricelistItemExisting = $(this).find('td:eq(17)').text();
+            var pricelistItemExisting = $(this).find('td:eq(16)').text();
             // var $pricelistBtn = $(this).find('[data-name="Add Pricelist"]');
             // var $pricelistItemBtn = $(this).find('[data-name="Add Pricelist Item"]');
             // var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
