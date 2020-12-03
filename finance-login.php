@@ -24,7 +24,7 @@
 							<div class="col-lg-6">
 								<div class="login-wrapper">
 									<div class="text-center">
-										<img src="./img/acg-logo.webp" class="caspio-logo">
+										<img src="./img/logo.png" class="caspio-logo">
 									</div>
 									<div class="login-container">
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/069580005b83b41c1b4c46b8bf28/emb"></script>

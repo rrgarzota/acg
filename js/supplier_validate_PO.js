@@ -60,9 +60,22 @@ $(function(){
                 }
             }
 
+            // hide supplier price when pr is submitted
+            if (poStatus === 'Yes') {
+                $supplierPriceCont.text('');
+                $addpricelistItemBtn.addClass('d-none');
+                $editPricelistItemBtn.addClass('d-none');
+            }
+
             if (poSupplierID.trim() != supplierIDAuth.trim() && poStatus === 'Yes') {
                 highlightCell($poStatusCont);
-                $poMessageContainer.removeClass('d-none');                
+                $poMessageContainer.removeClass('d-none');
+                // hide supplier price when pr is submitted
+                if (poStatus === 'Yes') {
+                    $supplierPriceCont.text('');
+                    $addpricelistItemBtn.addClass('d-none');
+                    $editPricelistItemBtn.addClass('d-none');
+                }          
             }
 
             if (cancelledPoStatus === 'Yes') {

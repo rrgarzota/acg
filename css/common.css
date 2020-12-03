@@ -273,13 +273,13 @@ table[data-cb-name="cbTable"] tbody tr[data-cb-name="header"] th,
 
 .bg-reset-password-image
 {
-    background: url('../img/image-4.jpg');
+    background: url('../img/public-img.png');
     background-position: center;
     background-size: cover;
 }
 
 .bg-login-image {
-    background: url('../img/image-3.jpg');
+    background: url('../img/public-img.png');
     background-position: center;
     background-size: cover;
 }

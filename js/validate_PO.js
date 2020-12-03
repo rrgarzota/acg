@@ -43,6 +43,7 @@ $(function(){
             if (poStatus === 'Yes') {
                 $inlineEditBtn.hide();
                 $inlineDeleteBtn.hide();
+                $supplierPriceCont.text('');
             }
 
             if (cancelledPoStatus === 'Yes') {
