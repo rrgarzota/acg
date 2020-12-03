@@ -13,9 +13,4 @@
 <link href="./css/common.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/jquery.datetimepicker.min.css" media="screen" title="no title" charset="utf-8">
 
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
-<script src="../js/jquery.min.js" crossorigin="anonymous"></script>
-
-<script src="./js/jquery.datetimepicker.full.min.js" type='text/javascript'></script> -->
-
 

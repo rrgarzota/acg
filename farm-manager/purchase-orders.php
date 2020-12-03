@@ -41,7 +41,6 @@
 	<?php include '../partials/footer.php'; ?>
 	<?php include '../partials/modal.php'; ?>
 	<script src="../js/validate_PO_poPage.js"></script>
-	<!-- <script src="../js/forms-modal.js"></script> -->
 
 </html>
 

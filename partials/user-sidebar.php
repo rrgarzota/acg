@@ -3,9 +3,6 @@
 <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <a class="sidebar-brand align-items-center justify-content-center" href="index.php">
-	<!-- <div class="sidebar-brand-icon">
-		<i class="fas fa-cogs"></i>
-	</div> -->
 	<div class="sidebar-brand-text mx-3">User Portal</div>
 </a>
 	  
@@ -45,7 +42,3 @@
 </div>
 
 </ul>
-
-<!-- <div class="left-div">
-
-</div> -->

@@ -16,10 +16,8 @@ $(function(){
             var budgetQty = $budgetQtyCont.text();
             var poStatus = $(this).find('td:eq(9)').text();
             var cancelledPoStatus = $(this).find('td:eq(14)').text();
-            // var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
             var $editPrBtn = $(this).find('.edit');
             var $viewPrBtn = $(this).find('.view');
-            // var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
             var $cancelledPrBtn = $(this).find('.cancelled');
             var $inlineEditBtn = $(this).find('[data-cb-name="InlineEdit"]');
             var $inlineDeleteBtn = $(this).find('[data-cb-name="InlineDelete"]');

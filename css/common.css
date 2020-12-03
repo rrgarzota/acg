@@ -918,25 +918,9 @@ select.cbResultSetSelect,
     color: #005883 !important;
 }
 
-/* .btn-primary{
-
-    border-radius: .2rem!important;
-} */
-
 .bg-lighter-red{
     background-color: #f8d7da73!important;
 }
-
-/* .supplier-budget-sheet-items-container [class*=".cbOuterAjaxCtnr"]:nth-of-type(2) table{
-    overflow: hidden;
-    width: 100%;
-}
-.supplier-budget-sheet-items-container [class*=".cbOuterAjaxCtnr"]:nth-of-type(2) table > thead,
-.supplier-budget-sheet-items-container [class*=".cbOuterAjaxCtnr"]:nth-of-type(2) table > thead > tr,
-.supplier-budget-sheet-items-container [class*=".cbOuterAjaxCtnr"]:nth-of-type(2) table > tbody,
-.supplier-budget-sheet-items-container [class*=".cbOuterAjaxCtnr"]:nth-of-type(2) table > tbody > tr{
-    overflow: hidden;
-} */
 
 #cb-modal-body section{
     width: 100%!important;

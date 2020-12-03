@@ -29,7 +29,6 @@
 										<button class="btn btn-primary btn-sm page-add-btn" onclick="open_pr_modal('', 'add-pricelist')">Add</button>
 									</div>
 									<div class="card-body search-container">
-										<!-- <script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000b52af879f6734828a1ea/emb"></script> -->
 										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000fde82d83224a4edba5d3/emb"></script>
 									</div>
 								</div>

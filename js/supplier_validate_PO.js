@@ -18,33 +18,23 @@ $(function(){
             var $poStatusCont = $(this).find('td:eq(9)');
             var poStatus = $poStatusCont.text();
             var cancelledPoStatus = $(this).find('td:eq(18)').text();
-            // var $poBtn = $(this).find('[data-name="Add Purchase Order"]');
-            // var $cancelledPoBtn = $(this).find('[data-name="View Purchase Order"]');
 
             var $viewPrBtn = $(this).find('.view');
             var $cancelledPrBtn = $(this).find('.cancelled');
 
             var poSupplierID = $(this).find('td:eq(11)').text();
             var supplierIDAuth = $(this).find('td:eq(15)').text();
-            // var pricelistExisting = $(this).find('td:eq(19)').text();
             var pricelistItemExisting = $(this).find('td:eq(16)').text();
-            // var $pricelistBtn = $(this).find('[data-name="Add Pricelist"]');
-            // var $pricelistItemBtn = $(this).find('[data-name="Add Pricelist Item"]');
-            // var $editPricelistItemBtn = $(this).find('[data-name="Edit Pricelist Item"]');
             var $addpricelistItemBtn = $(this).find('.bsi-add-pricelist-item');
             var $editPricelistItemBtn = $(this).find('.bsi-edit-pricelist-item');
 
             var $parentTr = $(this).closest('tr');
 
-            // console.log(poStatus);
-            // console.log(poSupplierID);
-            // console.log(supplierIDAuth);return false;
             if (supplierPrice == 'R0.00' || budgetQty === 0 || (poSupplierID.trim() != supplierIDAuth.trim()) || poStatus.trim() === 'No' ) {
                 $viewPrBtn.attr('disabled', 'disabled');
                 $viewPrBtn.addClass("disabled");
                 $cancelledPrBtn.addClass('disabled');
                 $cancelledPrBtn.attr('disabled', 'disabled');
-
             }            
 
             // show/hide of add/edit pricelist item button
@@ -72,8 +62,7 @@ $(function(){
 
             if (poSupplierID.trim() != supplierIDAuth.trim() && poStatus === 'Yes') {
                 highlightCell($poStatusCont);
-                $poMessageContainer.removeClass('d-none');
-                
+                $poMessageContainer.removeClass('d-none');                
             }
 
             if (cancelledPoStatus === 'Yes') {
@@ -83,8 +72,6 @@ $(function(){
                 $viewPrBtn.removeClass('d-none');
                 $cancelledPrBtn.addClass('d-none');
             }
-
-            
 
         });
 
