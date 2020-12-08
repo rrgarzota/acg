@@ -15,6 +15,8 @@ $(function(){
             var supplierPrice = $supplierPriceCont.text();
             var $budgetQtyCont = $(this).find('td:eq(6)');
             var budgetQty = $budgetQtyCont.text();
+            var $budgetValueCont = $(this).find('td:eq(8)');
+            var budgetValue = $budgetValueCont.text();
             var $poStatusCont = $(this).find('td:eq(9)');
             var poStatus = $poStatusCont.text();
             var cancelledPoStatus = $(this).find('td:eq(18)').text();
@@ -48,7 +50,7 @@ $(function(){
             }
 
             // highlight cell and show message
-            if (supplierPrice == 'R0.00' || budgetQty === '0') {      
+            if ((supplierPrice == 'R0.00' && poStatus === 'No') || budgetQty === '0') {      
                 $supplierBudgetMessageContainer.removeClass('d-none');
 
                 if (supplierPrice == 'R0.00') {
@@ -63,6 +65,8 @@ $(function(){
             // hide supplier price when pr is submitted
             if (poStatus === 'Yes') {
                 $supplierPriceCont.text('');
+                $budgetValueCont.text('');
+                // $supplierPriceCont.removeClass('bg-lighter-red');
                 $addpricelistItemBtn.addClass('d-none');
                 $editPricelistItemBtn.addClass('d-none');
             }
@@ -73,6 +77,8 @@ $(function(){
                 // hide supplier price when pr is submitted
                 if (poStatus === 'Yes') {
                     $supplierPriceCont.text('');
+                    $budgetValueCont.text('');
+                    // $supplierPriceCont.removeClass('bg-lighter-red');
                     $addpricelistItemBtn.addClass('d-none');
                     $editPricelistItemBtn.addClass('d-none');
                 }          

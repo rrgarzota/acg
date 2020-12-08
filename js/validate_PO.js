@@ -14,6 +14,8 @@ $(function(){
             var supplierPrice = $supplierPriceCont.text();
             var $budgetQtyCont = $(this).find('td:eq(6)');
             var budgetQty = $budgetQtyCont.text();
+            var $budgetValueCont = $(this).find('td:eq(8)');
+            var budgetValue = $budgetValueCont.text();
             var poStatus = $(this).find('td:eq(9)').text();
             var cancelledPoStatus = $(this).find('td:eq(14)').text();
             var $editPrBtn = $(this).find('.edit');
@@ -44,6 +46,7 @@ $(function(){
                 $inlineEditBtn.hide();
                 $inlineDeleteBtn.hide();
                 $supplierPriceCont.text('');
+                $budgetValueCont.text('');
             }
 
             if (cancelledPoStatus === 'Yes') {
