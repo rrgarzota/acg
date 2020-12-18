@@ -518,31 +518,8 @@ input[name$="InlineEditCancel"] {
 .shadow-lg-2 {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6) !important;
 }
-/* .sidebar .nav-item .collapse .collapse-inner .collapse-item,
-.sidebar .nav-item .collapse.show .collapse-inner .collapse-item,
-.sidebar .nav-item .collapse .collapse-inner .collapse-item:visited{
-    color: #fff;
-}
-
-.sidebar .nav-item .collapse.show .collapse-inner .collapse-item:active,
-.sidebar .nav-item .collapse .collapse-inner .collapse-item:focus {
-    color: #005883;
-    background-color: #fff;
-}
-
-
-.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover {
-    color: #03628c;
-}
-
-.sidebar .nav-item .collapse {
-    background-color: #03628c;
-    border-radius: 5px;
-} */
 
 /* custom */
-
-
 
 .sidebar.toggled .subtitle {
     margin-left: 0px;
