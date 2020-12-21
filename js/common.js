@@ -296,3 +296,21 @@ function resetSearch(){
     });
   }
 
+  function showPrButton(){
+
+    if (typeof(window.cbAjaxEventHandler) !== "undefined"){
+        window.cbAjaxEventHandler.addEventListener('GetRowData', function(v_event){
+
+            if (v_event){
+                var v_row = document.getElementById('DataRow'+ v_event.data.dataRowsIds[0] + v_event.data.UniqueSuffix);
+                var poStatus = v_row.querySelectorAll('td')[7].textContent;
+                var $inlineCancel = v_row.querySelector('[name="Mod0InlineEditCancel"]');
+            
+                $inlineCancel.addEventListener('click', function(e) {
+                    var $search = document.getElementById('filter-btn');
+                    $search.click();
+                });                
+            }
+        });
+    }
+  }
