@@ -53,11 +53,11 @@ p {
 }
 
 .modal {
-    z-index: 4 !important;
+    z-index: 99999 !important;
 }
 
 .modal-backdrop {
-    z-index: 3 !important;
+    z-index: 99998 !important;
 }
 
 .d-md-inline {
@@ -913,7 +913,6 @@ select.cbResultSetSelect,
 .form-modal{
     min-width: 135px!important;
 }
-
 
 
 
