@@ -49,6 +49,12 @@ function deploy_dp(containerID, appKey, param, title)
     document.getElementById(containerID).innerHTML = '';
     var $title = document.getElementById('cb-modal-title');
 
+    var $formContainer = $('#purchase-order-hidden-form');
+
+    if ($formContainer) {
+        $formContainer.html('');
+    }
+
 
     var script = document.createElement('script');
     script.src = 'https://c2abz206.caspio.com/dp/' + appKey + '/emb' + param;
@@ -92,6 +98,19 @@ function open_pr_modal(params, module)
         deploy_dp('cb-modal-body', '069580006906596eb4744628a8ca', '?' + params, 'View Purchase Request');
     } else if (module === 'finance-bsi-cancelled-pr') {
         deploy_dp('cb-modal-body', '0695800071e58e1101804cab889f', '?' + params, 'View Purchase Request');
+    }
+}
+
+function autoUpdateSupplierLowestPrice (params, module) {
+
+    var script = document.createElement('script');
+    script.src = 'https://c2abz206.caspio.com/dp/069580002812e8d493c94a0fa1b4/emb?' + params;
+
+    var container = document.getElementById('purchase-order-hidden-form');
+
+    if(container)
+    {
+        container.appendChild(script);
     }
 }
 

@@ -69,6 +69,12 @@ $(function(){
             element.addClass('bg-lighter-red');
         }
 
+        if (event.detail.appKey == '069580002812e8d493c94a0fa1b4') {
+            var $container = $('#purchase-order-hidden-form');
+            var $button = $container.find('[name="Mod0EditRecord"]');
+            $button.click();
+        }
+
     });
 
 });
