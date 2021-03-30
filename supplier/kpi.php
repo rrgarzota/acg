@@ -3,7 +3,7 @@
 
 	<head>
 		<?php include '../partials/header.php'; ?>
-		<title>Supplier: Price List</title>
+		<title>Supplier: KPI</title>
 	</head>
 
 	<body id="page-top">
@@ -19,14 +19,14 @@
 
 						<!-- Page Heading -->
 						<div class="d-sm-flex align-items-center justify-content-between mb-4 page-header">
-							<h1 class="h3 mb-0">Price List</h1>
+							<h1 class="h3 mb-0">KPI</h1>
 						</div>
 
 						<div class="row">
 							<div class="col-xl-12 col-lg-12">
 								<div class="card shadow mb-4">
 									<div class="card-body search-container">
-										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/06958000e147ee1ec38042eea576/emb"></script>
+										<script type="text/javascript" src="https://c2abz206.caspio.com/dp/069580003fc22d208c494943bf42/emb"></script>
 									</div>
 								</div>
 							</div>
@@ -39,7 +39,5 @@
 		<!-- End of Main Content -->
 	</body>
 	<?php include '../partials/footer.php'; ?>
-	<?php include '../partials/modal.php'; ?>
-
 
 </html>

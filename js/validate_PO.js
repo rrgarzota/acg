@@ -10,14 +10,14 @@ $(function(){
         var $supplierBudgetMessageContainer = $divCont.find('.supplier-budget-message-container');
         
         $resultTr.each(function(index){
-            var $supplierPriceCont = $(this).find('td:eq(5)');
+            var $supplierPriceCont = $(this).find('td:eq(4)');
             var supplierPrice = $supplierPriceCont.text();
-            var $budgetQtyCont = $(this).find('td:eq(4)');
+            var $budgetQtyCont = $(this).find('td:eq(3)');
             var budgetQty = $budgetQtyCont.text();
-            var $budgetValueCont = $(this).find('td:eq(6)');
+            var $budgetValueCont = $(this).find('td:eq(5)');
             var budgetValue = $budgetValueCont.text();
-            var poStatus = $(this).find('td:eq(7)').text();
-            var cancelledPoStatus = $(this).find('td:eq(12)').text();
+            var poStatus = $(this).find('td:eq(6)').text();
+            var cancelledPoStatus = $(this).find('td:eq(13)').text();
             var $editPrBtn = $(this).find('.edit');
             var $viewPrBtn = $(this).find('.view');
             var $cancelledPrBtn = $(this).find('.cancelled');
@@ -25,29 +25,29 @@ $(function(){
             var $inlineDeleteBtn = $(this).find('[data-cb-name="InlineDelete"]');
             var $parentTr = $(this).closest('tr');
             
-            // disable PO button and highlight cells
-            if (supplierPrice == 'R0.00' || budgetQty === '0') {          
-                $editPrBtn.attr('disabled', 'disabled');
-                $viewPrBtn.attr('disabled', 'disabled');
-                $editPrBtn.addClass("disabled");         
-                $viewPrBtn.addClass("disabled");         
-                $supplierBudgetMessageContainer.removeClass('d-none');
-
-                if (supplierPrice == 'R0.00') {
-                    highlightCell($supplierPriceCont);
-                }
-
-                if (budgetQty === '0') {
-                    highlightCell($budgetQtyCont);
-                }
-            }
-            
             if (poStatus === 'Yes') {
                 $inlineEditBtn.hide();
                 $inlineDeleteBtn.hide();
                 $supplierPriceCont.text('');
                 $budgetValueCont.text('');
-            }
+            } else {
+                // disable PO button and highlight cells
+                if (supplierPrice == 'R0.00' || budgetQty === '0') {          
+                    $editPrBtn.attr('disabled', 'disabled');
+                    $viewPrBtn.attr('disabled', 'disabled');
+                    $editPrBtn.addClass("disabled");         
+                    $viewPrBtn.addClass("disabled");         
+                    $supplierBudgetMessageContainer.removeClass('d-none');
+
+                    if (supplierPrice == 'R0.00') {
+                        highlightCell($supplierPriceCont);
+                    }
+
+                    if (budgetQty === '0') {
+                        highlightCell($budgetQtyCont);
+                    }
+                }
+            }          
 
             if (cancelledPoStatus === 'Yes') {
                 $cancelledPrBtn.removeClass('d-none');

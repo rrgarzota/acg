@@ -37,6 +37,16 @@
 		<i class="fas fa-fw fa-address-card"></i>
 		<span>Supplier Details</span></a>
 </li>
+<li class="nav-item">
+	<a class="nav-link" href="terms.php">
+		<i class="fas fa-fw fa-file-signature"></i>
+		<span>T&C</span></a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="kpi.php">
+		<i class="fas fa-fw fa-chart-line"></i>
+		<span>KPI</span></a>
+</li>
 
 <div class="text-center d-none d-md-inline">
 	<button class="rounded-circle border-0" id="sidebarToggle"></button>

@@ -123,6 +123,29 @@ function closeModalGeneral(){
     }
 }
 
+
+function clearPricelist(){
+
+    var $container = $('#cb-modal-body');
+    var $form = $container.find('#caspioform');
+    var $cancelBtn = $form.find('#btn-cancel');
+    var $editBtn = $form.find('#btn-update');
+    var $unitPrice = $form.find('input[name="EditRecordPrice_Unit"]'); 
+    var $validDate = $form.find('input[name="EditRecordPrice_Valid_Date"]');
+    var $requiredIfValidDate = $form.find('input[name="cbParamVirtual4"]');
+
+    var dateToday = moment().utc().add(2, 'hour').format('MM/DD/YYYY');
+
+
+    $unitPrice.val('0');
+    $requiredIfValidDate.val('0');
+    $validDate.val(dateToday);
+    $editBtn.click();
+    
+
+}
+
+
 function cancelPR(){
 
     var $container = $('#cb-modal-body');
