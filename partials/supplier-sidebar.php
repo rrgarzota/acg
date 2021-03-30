@@ -1,6 +1,6 @@
 
 
-<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
 <a class="sidebar-brand align-items-center justify-content-center" href="index.php">
 	<div class="sidebar-brand-icon">
@@ -47,8 +47,8 @@
 		<span>KPI</span></a>
 </li>
 
-<div class="text-center d-none d-md-inline">
+<!-- <div class="text-center d-none d-md-inline">
 	<button class="rounded-circle border-0" id="sidebarToggle"></button>
-</div>
+</div> -->
 
 </ul>

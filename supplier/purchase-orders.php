@@ -6,11 +6,11 @@
 		<title>Supplier: Purchase Requests</title>
 	</head>
 
-	<body id="page-top">
+	<body id="page-top" class="sidebar-toggled">
 		<div id="wrapper">
 		<?php include '../partials/supplier-sidebar.php'; ?>
 
-			<div id="content-wrapper" class="d-flex flex-column">
+			<div id="content-wrapper" class="d-flex flex-column content-left-margin-136">
 				<div id="content">
 					<?php include '../partials/topbar.php'; ?>
 
